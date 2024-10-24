@@ -1,7 +1,7 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Continual learning",
+    "description": "Empowering AI systems to learn continuously across diverse tasks.",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Community Engagement",
+    "description": "Join a global community of researchers and professionals in continual learning.",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Open Research",
+    "description": "Explore open-source projects, papers, and resources for continual learning.",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,
