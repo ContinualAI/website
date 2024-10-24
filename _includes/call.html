@@ -1,0 +1,13 @@
+<div class="call">
+  <div class="call-box-top call-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <!-- Sentence on the left -->
+    {% if site.data.contact.contact_sentence %}
+      <p class="call-sentence" style="margin: 0;">{{ site.data.contact.contact_sentence }}</p>
+    {% endif %}
+    
+    <!-- Button aligned to the right -->
+    {% if include.show_button %}
+      <a href="{{ site.data.contact.contact_button_link }}" class="button call-button" style="padding: 10px 30px; background-color: #e5261f; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2em; display: inline-flex; justify-content: center; align-items: center; height: 50px; min-width: 120px;">{{ site.data.contact.contact_button_text | default: "JOIN" }}</a>
+    {% endif %}
+  </div>
+</div>
