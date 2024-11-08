@@ -6,7 +6,7 @@ weight: 1
 
 The **ContinualAI Unconference** is an annual, fully virtual event organized by ContinualAI, a non-profit research organization dedicated to advancing continual learning. This unique 24-hour conference spans multiple time zones, ensuring inclusivity and accessibility for participants worldwide. The Unconference brings together experts and enthusiasts from machine learning, computational neuroscience, robotics, and related fields to discuss and explore the latest developments in continual learning.
 
-![ContinualAI Unconference](/images/unconference/CLAI-Horizontal.png)
+![ContinualAI Unconference]({{site.baseurl}}/images/unconference/CLAI-Horizontal.png)
 
 ### Key Features of the Unconference
 
