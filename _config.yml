@@ -1,4 +1,4 @@
-baseurl: '/'
+baseurl: '/website'
 permalink: pretty
 title: 'ContinualAI'
 
