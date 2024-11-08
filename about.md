@@ -1,8 +1,8 @@
 ---
-title: About
+title: Support
 layout: page
-description: About
-bodyClass: page-about
+description: Support
+bodyClass: page-support
 ---
 
 Humans have the extraordinary ability to learn continually from experience. We not only apply previously acquired knowledge and skills to new situations, but we also build upon these foundations to enhance our learning over time. One of the grand challenges in AI is to develop artificial agents that can mimic this capability—continual learning—by building a deep understanding of the world through the incremental acquisition of increasingly complex knowledge and skills.

@@ -11,6 +11,9 @@ main:
   - name: "Contact"
     url: "/contact/"
     weight: 5
+  - name: "Support"     
+    url: "/support/"
+    weight: 6 
 
 footer:
   - name: "Home"
@@ -19,3 +22,4 @@ footer:
   - name: "Contact"
     url: "/contact/"
     weight: 2
+

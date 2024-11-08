@@ -10,4 +10,4 @@ show_call_box: true
 
 # ContinualAI
 
-ContinualAI is an official non-profit research organization and the largest open community on Continual Learning for AI. Our core mission is to fuel continual learning research by connecting researchers in the field and offering a platform to share, discuss, and produce original research on a topic we consider fundamental for the future of AI.
+**ContinualAI** is the largest non-profit research organization which aims to catalyze continual learning research. ContinualAI connects continual learning researchers from across academia and industry, offering a platform to **share, discuss, and produce original continual learning research** that is fundamental for the future of AI. Some of ContinualAI's activities include hosting an **open seminar series**, the **first international (un)conference for continual learning**, **educational tutorials**, and developing and maintaining **Avalanche**, a flagship open-source deep learning library to aid continual learning researchers.
