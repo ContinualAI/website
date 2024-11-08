@@ -10,9 +10,24 @@
     "image": "images/social/twitter.svg"
   },
   {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/ContinualAI",
+      "image": "images/social/facebook.svg"
+  },
+  {
       "name": "Email",
       "link": "contact@continualai.org ",
       "image": "images/social/email.svg"
+  },
+  {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/continual_ai/",
+      "image": "images/social/instagram.svg"
+  },
+  {
+      "name": "Youtube",
+      "link": "https://www.youtube.com/channel/UCD9_bqN3gX-TLxcr47vvMmA",
+      "image": "images/social/youtube.svg"
   }
 
 ]
