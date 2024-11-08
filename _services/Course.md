@@ -8,7 +8,7 @@ Continual learning is a pivotal area in artificial intelligence, focusing on dev
 
 ### 1. Continual Learning: On Machines that can Learn Continually
 
-![Continual Learning Course](/images/course/continual_learning_course_logo.png)
+![Continual Learning Course]({{site.baseurl}}/images/course/continual_learning_course_logo.png)
 
 Offered by ContinualAI in collaboration with the University of Pisa and the AIDA Doctoral Academy, this open-access course provides a structured introduction to continual learning, with an emphasis on recent advancements in deep learning. The curriculum includes:
 
@@ -24,7 +24,7 @@ Designed for graduate and PhD students, this course features recorded lectures, 
 
 ### 2. Open World Lifelong Learning Course – Summer 2022
 
-![Open World Lifelong Learning Course](/images/course/OWLifelong_Learning_Course.webp)
+![Open World Lifelong Learning Course]({{site.baseurl}}/images/course/OWLifelong_Learning_Course.webp)
 
 Conducted at TU Darmstadt and powered by ContinualAI and hessian.AI, this course explores continual learning beyond static datasets, covering modern approaches to lifelong learning. Key topics include:
 
