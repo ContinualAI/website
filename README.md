@@ -30,5 +30,7 @@ bundle exec jekyll build
 
 
 A redish color to start with: #F8456F
+
 A darker blue: #475DF6
+
 ContinualAI blue (light): #0A80FF
