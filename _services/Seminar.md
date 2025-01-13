@@ -16,4 +16,5 @@ Join us every last Thursday of the month for a seminar on the latest advancement
 ## Upcoming Seminars:
 
 **Title**: Task-agnostic continual learning for the open world
+
 Thursday, January 30th, at 6 PM CET / 9 AM PT / 12 AM ET
