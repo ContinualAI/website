@@ -8,6 +8,6 @@ linkedinurl: "https://www.linkedin.com/"
 promoted: true
 ---
 
-
+**Julio Hurtado** is an Innovate Research Associate at the Centre for Applications of Mathematical & Computing Sciences (CAMaCS), University of Warwick
 
 ---
