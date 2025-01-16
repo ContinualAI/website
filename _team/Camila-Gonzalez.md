@@ -4,7 +4,7 @@ date: 2024-10-23T10:00:00+10:00
 image: "images/team/GonzalezCamila_small.png"
 jobtitle: "Board Member"
 weight: 4
-linkedinurl: "https://www.linkedin.com/"
+linkedinurl: "https://www.linkedin.com/in/camila-gonzález-618a5b188/"
 promoted: true
 ---
 
