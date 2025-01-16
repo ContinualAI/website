@@ -1,5 +1,5 @@
 ---
-title: Services
+title: activities
 layout: services
 description: Discover our key services and offerings
 intro_image: "images/illustrations/continualai_logo_name_black.png"
