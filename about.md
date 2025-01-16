@@ -1,7 +1,7 @@
 ---
-title: Support
+title: About
 layout: page
-description: Support ContinualAI
+description: About ContinualAI
 bodyClass: page-support
 ---
 
