@@ -22,17 +22,16 @@ Are you curious about *ContinualAI* and its mission? Check out our [introductory
     <strong>Social Media:</strong><br>
     <a href="https://www.facebook.com/ContinualAI" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> | 
     <a href="https://twitter.com/ContinualAI" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> | 
-    <a href="https://www.instagram.com/continual_ai/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> | 
     <a href="https://www.linkedin.com/company/12607275/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
     <a href="https://www.youtube.com/channel/UCD9_bqN3gX-TLxcr47vvMmA" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
 </div>
 
 ---
 
-**ContinualAI** is an open and inclusive community. We welcome new members to join our collaborative projects or engage in discussions about continual learning (CL). [Join us on Slack](https://continualai.herokuapp.com/) today!
+**ContinualAI** is an open and inclusive community. We welcome new members to join our collaborative projects or engage in discussions about continual learning (CL). [Join us on Slack](https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw) today!
 
 <div style="text-align:center; background: rgba(245, 245, 245, 0.9); border: 1px solid #DEDEDE; padding: 1.5em; border-radius: 8px; margin-top: 25px; font-size: 20px;">
-    <a href="https://join.slack.com/t/continualai/shared_invite/enQtNjQxNDYwMzkxNzk0LTBhYjg2MjM0YTM2OWRkNDYzOGE0ZTIzNDQ0ZGMzNDE3ZGUxNTZmNmM1YzJiYzgwMTkyZDQxYTlkMTI3NzZkNjU" target="_blank"><strong>Join Us on Slack</strong></a>
+    <a href="https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw" target="_blank"><strong>Join Us on Slack</strong></a>
 </div>
 
 ---

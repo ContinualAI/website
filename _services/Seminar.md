@@ -10,7 +10,7 @@ weight: 1
 
 ---
 
-📅 **Join us every XXX of the month** for insights into the latest developments in Continual Learning.
+📅 **Join us last Thursday of the month** for insights into the latest developments in Continual Learning.
 
 ---
 
