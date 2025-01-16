@@ -1,7 +1,7 @@
 ---
 title: "Continual Learning Course"
 date: 2024-10-24T12:33:46+10:00
-weight: 1
+weight: 4
 ---
 
 Continual learning is a pivotal area in artificial intelligence, focusing on developing systems capable of learning and adapting over time without forgetting previous knowledge. To advance education and research in this field, two comprehensive courses are available:

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>ContinualAI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="/website/images/favicon-32x32.svg">
+  <link rel="icon" type="image/png" href="/website/images/favicon.ico">
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,10 +98,17 @@
   </div>
 </div>
 
-    <div class="intro">
-  <div class="container">
+    <!-- Include Animate.css (CDN) for simple animations -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- INTRO SECTION with Animation-->
+<div class="intro animate__animated animate__fadeInUp">
+  <div class="container intro-container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1 intro-text">
         <h1 id="continualai">ContinualAI</h1>
 
 <p><strong>ContinualAI</strong> is the largest non-profit research organization which aims to catalyze continual learning research. ContinualAI connects continual learning researchers from across academia and industry, offering a platform to <strong>share, discuss, and produce original continual learning research</strong> that is fundamental for the future of AI. Some of ContinualAI’s activities include hosting an <strong>open seminar series</strong>, the <strong>first international (un)conference for continual learning</strong>, <strong>educational tutorials</strong>, and developing and maintaining <strong>Avalanche</strong>, a flagship open-source deep learning library to aid continual learning researchers.</p>
@@ -125,13 +132,123 @@
       </div>
       
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="ContinualAI" class="intro-image intro-image-absolute intro-image-hide-mobile" src="images/illustrations/continualai_logo_name_black.png" />
+        <img 
+          alt="ContinualAI"
+          class="intro-image intro-image-absolute intro-image-hide-mobile"
+          src="images/illustrations/continualai_logo_name_black.png"
+        />
       </div>
       
     </div>
   </div>
 </div>
 
+<!-- NEW STRIP WITH SIDEBAR: Next event & Latest News -->
+<div class="strip strip-news animate__animated animate__fadeInUp">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      
+      <!-- Main Column: "Next Event" (controllable content) -->
+      <div class="col-12 col-md-8 event-section">
+        <h2 class="event-title">Next Event!!</h2>
+        <!-- Add more details about the event here -->
+        <p class="event-description">
+          Stay tuned for our upcoming Continual Learning seminar on 
+          <strong>Thursday, January 30th, at 6 PM CET / 9 AM PT / 12 AM ET</strong>!<br/>
+          We’ll host a Task-agnostic continual learning for the open world topic.
+        </p>
+        <p class="event-link">
+          <a href="https://example.com/event-registration" class="btn btn-primary" target="_blank" rel="noopener">
+            Learn More & Register
+          </a>
+        </p>
+      </div>
+
+      <!-- Sidebar Column: Latest News -->
+      <aside class="col-12 col-md-4 news-sidebar-wrapper">
+        <div class="news-sidebar">
+          <h3>Latest News</h3>
+          <ul>
+            <!-- Add or remove <li> items to easily update news -->
+            <li>
+              <strong>Jan 16, 2025:</strong> New tutorial on 
+              <em>Avalanche library</em> is now live!
+            </li>
+            <li>
+              <strong>Dec 25, 2024:</strong> Holiday release of our 
+              <em>new version</em> featuring advanced metrics.
+            </li>
+            <li>
+              <strong>Dec 01, 2024:</strong> <em>CL Workshop</em> submission 
+              deadline extended!
+            </li>
+          </ul>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS to style our intro and news strip -->
+<style>
+
+/* EVENT + NEWS STYLES */
+.strip-news {
+  background: #fafafa; /* or your preferred background color */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Event Section */
+.event-section {
+  margin-bottom: 2rem;
+}
+.event-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.event-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.event-link .btn.btn-primary {
+  margin-top: 0.5rem;
+}
+
+/* News Sidebar */
+.news-sidebar-wrapper {
+  margin-top: 2rem;
+}
+.news-sidebar {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.news-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.news-sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.news-sidebar li {
+  margin-bottom: 1rem;
+}
+.news-sidebar li strong {
+  color: #dc2430;
+}
+</style>
+
+
+
+<!-- Services Strip (unchanged) -->
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
@@ -141,9 +258,10 @@
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/website/services/Course/">Continual Learning Course</a>
+              <a href="/website/services/Seminar/">Seminar Series 2025</a>
             </h2>
-            <p>Continual learning is a pivotal area in artificial intelligence, focusing on developing systems c...</p>
+            <p>🌟 Seminar Series 2025
+</p>
           </div>
         </div>
       </div>
@@ -174,9 +292,9 @@
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/website/services/Seminar/">Seminar</a>
+              <a href="/website/services/Course/">Continual Learning Course</a>
             </h2>
-            <p>Join us for a seminar on the latest advancements in Continual Learning, hosted by ContinualAI. Th...</p>
+            <p>Continual learning is a pivotal area in artificial intelligence, focusing on developing systems c...</p>
           </div>
         </div>
       </div>
@@ -184,22 +302,31 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="/website/services">View All Services</a>
+        <a class="button button-primary" href="/website/services">
+          View All Services
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 
+<!-- Features Strip (unchanged) -->
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
-
       
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           
-          <div class="feature-image"><img alt="Continual learning logo" src="/website/images/features/noun_branding_1885335.svg" width="80" height="80" /></div>
+          <div class="feature-image">
+            <img 
+              alt="Continual learning logo"
+              src="/website/images/features/noun_branding_1885335.svg"
+              width="80"
+              height="80"
+            />
+          </div>
           
           <h2 class="feature-title">Continual learning</h2>
           <div class="feature-content">Empowering AI systems to learn continuously across diverse tasks.</div>
@@ -209,7 +336,14 @@
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           
-          <div class="feature-image"><img alt="Community Engagement logo" src="/website/images/features/noun_The%20Process_1885341.svg" width="80" height="80" /></div>
+          <div class="feature-image">
+            <img 
+              alt="Community Engagement logo"
+              src="/website/images/features/noun_The%20Process_1885341.svg"
+              width="80"
+              height="80"
+            />
+          </div>
           
           <h2 class="feature-title">Community Engagement</h2>
           <div class="feature-content">Join a global community of researchers and professionals in continual learning.</div>
@@ -219,17 +353,24 @@
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           
-          <div class="feature-image"><img alt="Open Research logo" src="/website/images/features/noun_3d%20modeling_1885342.svg" width="80" height="80" /></div>
+          <div class="feature-image">
+            <img 
+              alt="Open Research logo"
+              src="/website/images/features/noun_3d%20modeling_1885342.svg"
+              width="80"
+              height="80"
+            />
+          </div>
           
           <h2 class="feature-title">Open Research</h2>
           <div class="feature-content">Explore open-source projects, papers, and resources for continual learning.</div>
         </div>
       </div>
       
-
     </div>
   </div>
 </div>
+
 
 
   </div>
@@ -265,17 +406,17 @@
           
             <div class="social">
   
-    <a href="https://github.com/zerostaticthemes/jekyll-serif-theme" target="blank"><img src="/website/images/social/github.svg" title="Github" alt="Github" /></a>
+    <a href="https://github.com/continualai" target="blank"><img src="/website/images/social/github.svg" title="Github" alt="Github" /></a>
   
-    <a href="https://twitter.com/zerostaticio" target="blank"><img src="/website/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+    <a href="https://x.com/continualai" target="blank"><img src="/website/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
   
-    <a href="https://facebook.com" target="blank"><img src="/website/images/social/facebook.svg" title="Facebook" alt="Facebook" /></a>
+    <a href="https://www.facebook.com/ContinualAI" target="blank"><img src="/website/images/social/facebook.svg" title="Facebook" alt="Facebook" /></a>
   
-    <a href="mailto:ekyllserif@example.com " target="blank"><img src="/website/images/social/email.svg" title="Email" alt="Email" /></a>
+    <a href="contact@continualai.org " target="blank"><img src="/website/images/social/email.svg" title="Email" alt="Email" /></a>
   
-    <a href="https://instagram.com" target="blank"><img src="/website/images/social/instagram.svg" title="Instagram" alt="Instagram" /></a>
+    <a href="https://www.instagram.com/continual_ai/" target="blank"><img src="/website/images/social/instagram.svg" title="Instagram" alt="Instagram" /></a>
   
-    <a href="https://discord.com" target="blank"><img src="/website/images/social/discord.svg" title="Discord" alt="Discord" /></a>
+    <a href="https://www.youtube.com/channel/UCD9_bqN3gX-TLxcr47vvMmA" target="blank"><img src="/website/images/social/youtube.svg" title="Youtube" alt="Youtube" /></a>
   
 </div>
 
@@ -290,19 +431,5 @@
 </div>
   <script type="text/javascript" src="/website/assets/js/scripts.js"></script>
   
-    
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', '');
-    </script>
-    
-
 </body>
 </html>

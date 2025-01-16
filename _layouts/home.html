@@ -3,10 +3,17 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
-  <div class="container">
+<!-- Include Animate.css (CDN) for simple animations -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- INTRO SECTION with Animation-->
+<div class="intro animate__animated animate__fadeInUp">
+  <div class="container intro-container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1 intro-text">
         {{ content }}
         {% if page.show_call_box %}
           {% include call.html show_button=true %}
@@ -14,13 +21,123 @@ bodyClass: "page-home"
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+        <img 
+          alt="{{ page.title }}"
+          class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}"
+          src="{{ page.intro_image | relURL }}"
+        />
       </div>
       {% endif %}
     </div>
   </div>
 </div>
 
+<!-- NEW STRIP WITH SIDEBAR: Next event & Latest News -->
+<div class="strip strip-news animate__animated animate__fadeInUp">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      
+      <!-- Main Column: "Next Event" (controllable content) -->
+      <div class="col-12 col-md-8 event-section">
+        <h2 class="event-title">Next Event!!</h2>
+        <!-- Add more details about the event here -->
+        <p class="event-description">
+          Stay tuned for our upcoming Continual Learning seminar on 
+          <strong>Thursday, January 30th, at 6 PM CET / 9 AM PT / 12 AM ET</strong>!<br/>
+          We’ll host a Task-agnostic continual learning for the open world topic.
+        </p>
+        <p class="event-link">
+          <a href="https://example.com/event-registration" class="btn btn-primary" target="_blank" rel="noopener">
+            Learn More & Register
+          </a>
+        </p>
+      </div>
+
+      <!-- Sidebar Column: Latest News -->
+      <aside class="col-12 col-md-4 news-sidebar-wrapper">
+        <div class="news-sidebar">
+          <h3>Latest News</h3>
+          <ul>
+            <!-- Add or remove <li> items to easily update news -->
+            <li>
+              <strong>Jan 16, 2025:</strong> New tutorial on 
+              <em>Avalanche library</em> is now live!
+            </li>
+            <li>
+              <strong>Dec 25, 2024:</strong> Holiday release of our 
+              <em>new version</em> featuring advanced metrics.
+            </li>
+            <li>
+              <strong>Dec 01, 2024:</strong> <em>CL Workshop</em> submission 
+              deadline extended!
+            </li>
+          </ul>
+        </div>
+      </aside>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS to style our intro and news strip -->
+<style>
+
+/* EVENT + NEWS STYLES */
+.strip-news {
+  background: #fafafa; /* or your preferred background color */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Event Section */
+.event-section {
+  margin-bottom: 2rem;
+}
+.event-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.event-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.event-link .btn.btn-primary {
+  margin-top: 0.5rem;
+}
+
+/* News Sidebar */
+.news-sidebar-wrapper {
+  margin-top: 2rem;
+}
+.news-sidebar {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.news-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.news-sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.news-sidebar li {
+  margin-bottom: 1rem;
+}
+.news-sidebar li strong {
+  color: #dc2430;
+}
+</style>
+
+
+
+<!-- Services Strip (unchanged) -->
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
@@ -40,30 +157,39 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "services" | relative_url }}">
+          View All Services
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 {% if site.data.features %}
+<!-- Features Strip (unchanged) -->
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
-
       {% for feature in site.data.features %}
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+          <div class="feature-image">
+            <img 
+              alt="{{ feature.title }} logo"
+              src="{{ feature.image.url | relative_url }}"
+              width="{{ feature.image.width }}"
+              height="{{ feature.image.height }}"
+            />
+          </div>
           {% endif %}
           <h2 class="feature-title">{{ feature.title }}</h2>
           <div class="feature-content">{{ feature.description }}</div>
         </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
 </div>
 {% endif %}
+

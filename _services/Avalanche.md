@@ -1,7 +1,7 @@
 ---
 title: "Avalanche"
 date: 2024-10-24T12:33:46+10:00
-weight: 2
+weight: 3
 ---
 
 [Avalanche](https://avalanche.continualai.org) is an open-source, end-to-end continual learning library developed by ContinualAI to accelerate research and development in continual learning. Built on PyTorch, Avalanche provides a **comprehensive framework** for prototyping, training, and evaluating continual learning algorithms, making it easier for researchers and practitioners to advance their work in the field.

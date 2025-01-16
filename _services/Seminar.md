@@ -1,20 +1,50 @@
 ---
-title: "Seminar"
+title: "Seminar Series 2025"
 date: 2024-10-24T12:33:46+10:00
-weight: 3
+weight: 1
 ---
 
+# 🌟 Seminar Series 2025
 
-# Seminar Series 2025!
+### Seminars hosted by **ContinualAI** bring together researchers and enthusiasts to discuss cutting-edge topics in **Continual Learning**. Each session lasts **60 minutes**, with **40 minutes of presentations**, often delivered by the authors of recent groundbreaking research.
 
-Seminars are gatherings within the ContinualAI community where we discuss topics related to Continual Learning. Each seminar lasts 60 minutes and typically includes 40 minutes dedicated to one or two presentations of recent work, usually delivered by the authors themselves. The seminar will discuss cutting-edge research and practical applications of continual learning models.
+---
 
-The seminars provide a valuable chance to engage in detailed discussions about relevant work and connect with individuals with similar research interests.
+📅 **Join us every XXX of the month** for insights into the latest developments in Continual Learning.
 
-Join us every last Thursday of the month for a seminar on the latest advancements in Continual Learning, hosted by ContinualAI.
+---
 
-## Upcoming Seminars:
+# 📢 Upcoming Seminar
 
-**Title**: Task-agnostic continual learning for the open world
+### **Task-Agnostic Continual Learning for the Open World**
+**📅 Date & Time**: Thursday, January 30th  
+**6 PM CET / 9 AM PT / 12 PM ET**
 
-Thursday, January 30th, at 6 PM CET / 9 AM PT / 12 AM ET
+Stay tuned for detailed announcements and registration information.
+
+---
+
+# 🎥 Previous Seminars
+
+Explore highlights from recent seminars to gain valuable insights into Continual Learning.
+
+### **1. ContinualAI April 2023 Seminar/Meetup**
+- **Topic**: "Continual Learning in Language Models"
+- **Speakers**: Joel Jang (KAIST), Yujia Qin & Jiajie Zhang (Tsinghua University), Zixuan Ke (University of Illinois, Chicago)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FmfRukpRKjg" frameborder="0" allowfullscreen></iframe>
+
+---
+
+### **2. Bridging the Gap: Evaluating and Applying Continual Learning**
+- **Speakers**: Matthias De Lange (KU Leuven), Camila González (Technical University of Darmstadt), Soroor Hediyeh-zadeh (Computational Health Center, Helmholtz Munich)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T2IYBSyug6w" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## 🌐 For a comprehensive view of all our seminars, visit:
+- 🎥 [ContinualAI YouTube Channel](https://www.youtube.com/@ContinualAI)
+- 📺 [Seminar Playlist](https://www.youtube.com/playlist?list=PLm6QXeaB-XkBMFxvgZvYjqhaPgGg8Um9Z)
+
+Stay connected with the ContinualAI community for updates on future events and discussions!

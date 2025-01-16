@@ -1,6 +1,6 @@
 ---
 title: Support
-layout: page
+layout: page_no_eff
 description: Support Info
 intro_image: "images/illustrations/continualai_logo_name_black.png"
 intro_image_absolute: true

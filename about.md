@@ -1,19 +1,48 @@
 ---
 title: Support
 layout: page
-description: Support
+description: Support ContinualAI
 bodyClass: page-support
 ---
 
-Humans have the extraordinary ability to learn continually from experience. We not only apply previously acquired knowledge and skills to new situations, but we also build upon these foundations to enhance our learning over time. One of the grand challenges in AI is to develop artificial agents that can mimic this capability—continual learning—by building a deep understanding of the world through the incremental acquisition of increasingly complex knowledge and skills.
+# 🌍 Support ContinualAI
 
-**ContinualAI** is an official non-profit research organization and the largest open community dedicated to Continual Learning for AI. Our core mission is to drive continual learning research forward by connecting researchers, sharing ideas, and producing original research on this crucial topic for the future of AI.
+Humans possess the extraordinary ability to learn continually from experience—adapting, applying, and building upon knowledge over time. One of the greatest challenges in artificial intelligence is to develop systems that mimic this capability. **Continual learning** aims to create agents that incrementally acquire and refine complex knowledge and skills, enabling them to build a deep understanding of the world.
 
-### Our Mission
-We aim to advance continual learning research through several key initiatives:
-- **Organizing and Sponsoring Events:** We host workshops at major AI conferences, organize industrial panels, webinars, and publish special issues focused on continual learning.
-- **Building Communication Platforms:** We enhance collaboration through our aggregation and communication platforms, including Slack, social media channels, mailing lists, newsletters, and forums.
-- **Supporting Open Source Development:** We have established the **ContinualAI Lab**, a distributed, collaborative team focused on developing open-source projects and tools that simplify continual learning research.
-- **Facilitating Global Collaboration:** We have formed **ContinualAI Research**, a research consortium that coordinates and fosters collaboration between continual learning labs worldwide.
+**ContinualAI** is a registered non-profit research organization and the **largest open community dedicated to Continual Learning for AI**. Our mission is to advance this critical field by connecting researchers, sharing ideas, and producing groundbreaking research to shape the future of AI.
 
-At **ContinualAI**, we believe that continual learning is a fundamental pillar for the future of AI, and through our open, inclusive community, we are dedicated to shaping this future together.
+---
+
+## 🎯 Our Mission
+
+We are committed to advancing continual learning through key initiatives:
+
+### 📅 Organizing and Sponsoring Events
+- Hosting workshops at major AI conferences.
+- Organizing industrial panels, webinars, and hackathons.
+- Publishing special issues focused on continual learning.
+
+### 🗣️ Building Communication Platforms
+- Enhancing collaboration via platforms like Slack, forums, newsletters, and mailing lists.
+- Actively engaging through social media and community updates.
+
+### 💻 Supporting Open-Source Development
+- Driving innovation through the **ContinualAI Lab**, a distributed team developing open-source projects and tools for continual learning research.
+
+### 🤝 Facilitating Global Collaboration
+- Coordinating research through **ContinualAI Research**, a consortium uniting labs and researchers worldwide.
+
+---
+
+## 💡 Why Support Us?
+
+At **ContinualAI**, we believe continual learning is a cornerstone of the future of artificial intelligence. By supporting our open, inclusive community, you help foster groundbreaking research, global collaboration, and tools that empower the next generation of AI systems.
+
+---
+
+### 🌟 Get Involved
+- **Join Our Community**: Connect with passionate researchers and enthusiasts.
+- **Contribute to Research**: Collaborate on open-source projects and initiatives.
+- **Spread the Word**: Help us grow by sharing our mission.
+
+Together, we can shape the future of AI through continual learning. Thank you for supporting **ContinualAI**!
