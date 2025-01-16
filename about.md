@@ -5,7 +5,7 @@ description: Support ContinualAI
 bodyClass: page-support
 ---
 
-# 🌍 Support ContinualAI
+# 🌍 About ContinualAI
 
 Humans possess the extraordinary ability to learn continually from experience—adapting, applying, and building upon knowledge over time. One of the greatest challenges in artificial intelligence is to develop systems that mimic this capability. **Continual learning** aims to create agents that incrementally acquire and refine complex knowledge and skills, enabling them to build a deep understanding of the world.
 
