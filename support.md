@@ -7,9 +7,9 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-**ContinualAI** is an official non-profit research organization. Donors and Sponsors are the financial backbone of our activities. As for the ContinualAI striving effort to be *open, collaborative* and *inclusive*, all the documents of the organization (including a detailed yearly financial statement) are openly accessible on our website.
+**ContinualAI** is an official non-profit research organization. Donors and sponsors are the financial backbone of our activities. Upholding our commitment to being *open, collaborative*, and *inclusive*, all organizational documents (including detailed yearly financial statements) are openly accessible on our website.
 
-Please consider donating to ContinualAI to support our mission to create and consolidate an open community of researchers and enthusiast working together on the topic of Continual Leaning for AI! Every backer or sponsor will be listed in this page (contact <a href="mailto:financials@continualai.org">financials@continualai.org</a> for further information).
+Please consider donating to **ContinualAI** to support our mission of creating and consolidating an open community of researchers and enthusiasts working together on the topic of Continual Learning for AI! Every backer or sponsor will be listed on this page. For further information, contact us at [financials@continualai.org](mailto:financials@continualai.org).
 
 <div style="background: rgba(0,0,0,0.06) none repeat scroll 0% 0%; border: 1px solid rgb(222, 222, 222); padding: 1em; border-radius: 5px; margin-top:20px; max-width: 50%">
 	<p style="text-align: center;"><strong>Contents</strong></p>
@@ -28,59 +28,43 @@ Please consider donating to ContinualAI to support our mission to create and con
 	</p>
 </div>
 
+<!-- Support ContinualAI Section -->
 <a name="support"></a>
-<h3 id="support" style="margin-bottom: 30px;">Support ContinualAI!</h3>
+### Support ContinualAI!
 
-<script src="https://donorbox.org/widget.js" paypalExpress="true"></script><iframe src="https://donorbox.org/embed/support-continualai?amount=30&show_content=true&default_interval=m" height="685px" width="100%" style="max-width:100%; min-width:100%; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
+<div style="margin-bottom: 30px;"></div>
 
+<script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+<iframe src="https://donorbox.org/embed/support-continualai?amount=30&show_content=true&default_interval=m" height="685px" width="100%" style="max-width:100%; min-width:100%; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
 
+<!-- Financial Supporters Section -->
 <a name="backers"></a>
-<h3 id="backers" style="margin-bottom: 30px;">Financial Supporters</h3>
+### Financial Supporters
 
-We are deeply tankful to all the people and organization who supported the *ContinualAI* community. In this section we list all the *Financial Supporters* of ContinualAI:
+We are deeply thankful to all the individuals and organizations who have supported the **ContinualAI** community. Below is a list of our esteemed *Financial Supporters*:
 
-[Vincenzo Lomonaco](https://http://vincenzolomonaco.com/), [Stefano Campese](https://www.linkedin.com/in/stefanocampese/), [Viviana](), [German](), [William]()
+- [Vincenzo Lomonaco](https://vincenzolomonaco.com/)
+- [Stefano Campese](https://www.linkedin.com/in/stefanocampese/)
+- [Viviana](#) <!-- Add Viviana's LinkedIn or website if available -->
+- [German](#) <!-- Add German's LinkedIn or website if available -->
+- [William](#) <!-- Add William's LinkedIn or website if available -->
 
-<!--
-<a name="patreons"></a>
-<h3 id="patreons" style="margin-bottom: 30px;">Patreons</h3>
-
-<a name="bronzesponsor"></a>
-<h3 id="bronzesponsor" style="margin-bottom: 30px;">Bronze Sponsors</h3>
-
-We are very tankful to all the people and organization who contributed to the *ContinualAI* community. In this section we list all the *Bronze Sponsors* of ContinualAI.
-
-<a name="silversponsor"></a>
-<h3 id="silversponsor" style="margin-bottom: 30px;">Silver Sponsors</h3>
-
-We are very tankful to all the people and organization who contributed to the *ContinualAI* community. In this section we list all the *Silver Sponsors* of ContinualAI.
-
-<a name="goldsponsor"></a>
-<h3 id="goldsponsor" style="margin-bottom: 30px;">Gold Sponsors</h3>
-
-We are very tankful to all the people and organization who contributed to the *ContinualAI* community. In this section we list all the *Gold Sponsors* of ContinualAI.
-
--->
-
+<!-- Technical Supporters Section -->
 <a name="techsupport"></a>
-<h3 id="techsupport" style="margin-bottom: 30px;">Technical Supporters and Friends</h3>
+### Technical Supporters and Friends
 
-We are very tankful to all the people and organization who contributed to the *ContinualAI* community and cause. In this section we list all the *Technical Supporters and Friends* of ContinualAI:
+We are immensely grateful to all the individuals and organizations that have contributed to the **ContinualAI** community and cause. Below is a list of our *Technical Supporters and Friends*:
 
 - [Italian Association of Machine Learning](https://iaml.it/)
 - [Simply Open s.r.l](https://www.simplyopen.org)
 - [AI for People](https://www.aiforpeople.org)
 - [Data Science Bologna](https://www.datasciencebologna.eu/)
 
+<!-- Donor Wall Section -->
 <a name="donorwall"></a>
-<h3 id="donorwall" style="margin-bottom: 30px;">Donor wall</h3>
+### Donor Wall
 
-<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="https://donorbox.org/embed/support-continualai?only_donor_wall=true" style="width: 100%; max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
-
-<!--<a name="financials"></a>
-<h3 id="financials" style="margin-bottom: 30px;">ContinualAI Financials</h3>
-
-As for the ContinualAI striving effort to be open, inclusive, democratic and transparent, the **balance** and **every transaction** of the organization is openly accessible on our website and visible in this section. If you have any doubt about the balance and the transactions of the organization, please don't hesitate to contact us at <a href="mailto:financials@continualai.org">financials@continualai.org</a>.
-
-- **2019 ContinualAI Balance**: &nbsp; <meter value="99" min="0" max="1000">99,19 out of 1000</meter> 99,19€<br>
-- **2019 Balance summary and list of transactions**: <a href="https://docs.google.com/spreadsheets/d/14oNha1qBl51cteuGEXEXnl7tVgCeRodjIO9D_eeoWJ8/edit?usp=sharing">google spreadsheet</a>-->
+<div style="text-align:center; background: rgba(245,245,245,0.9); border: 1px solid #DEDEDE; padding: 1em; border-radius: 8px; margin-top:20px;">
+    <script src="https://donorbox.org/widget.js" type="text/javascript"></script>
+    <iframe src="https://donorbox.org/embed/support-continualai?only_donor_wall=true" style="width: 100%; max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no"></iframe>
+</div>
