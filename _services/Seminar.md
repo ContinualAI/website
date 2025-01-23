@@ -16,7 +16,7 @@ weight: 1
 # 📢 Upcoming Seminar
 
 > ## **Task-Agnostic Continual Learning for the Open World**
-> #### <img src="{{ site.baseurl }}images/seminar/2025s1/cl_seminars_2025_Jan.png"/>
+> #### <img src="{{ site.baseurl }}/images/seminar/2025s1/cl_seminars_2025_Jan.png"/>
 > ---
 >
 > ### 📅 **Date & Time**
