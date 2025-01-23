@@ -8,5 +8,6 @@ linkedinurl: "https://www.linkedin.com/"
 promoted: true
 ---
 
+**Vincenzo Lomonaco** is a Researcher at the University of Pisa, where they teach Artificial Intelligence and lead the Pervasive AI Lab. He serve as Co-Founder of ContinualAI and collaborate with industry leaders like Meta and Intel on major AI projects.
 
 ---

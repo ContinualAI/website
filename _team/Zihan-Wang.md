@@ -8,4 +8,4 @@ linkedinurl: "https://beikewzh.github.io/"
 promoted: true
 ---
 
-**Zihan Wang** is a graduate student and dedicated board member of **ContinualAI**, the world’s largest non-profit research organization striving to advance the field of **continual learning**. ContinualAI connects researchers from academia and industry, working together to create AI systems that can learn and adapt over time without forgetting their past knowledge.
+**Zihan Wang** is a graduate student at McGill University and Mila, and a dedicated board member of ContinualAI, the world’s largest non-profit research organization striving to advance the field of continual learning. 

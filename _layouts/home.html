@@ -32,98 +32,146 @@ bodyClass: "page-home"
   </div>
 </div>
 
-<!-- NEW STRIP WITH SIDEBAR: Next event & Latest News -->
-<div class="strip strip-news animate__animated animate__fadeInUp">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
+<div class="strip strip-news animate__animated animate__fadeInUp bg-grey" aria-labelledby="event-section-title">
+  <div class="container py-4 py-md-6"> <!-- Reduced padding here -->
+    <div class="row">
       
-      <!-- Main Column: "Next Event" (controllable content) -->
-      <div class="col-12 col-md-8 event-section">
-        <h2 class="event-title">Next Event!!</h2>
-        <!-- Add more details about the event here -->
-        <p class="event-description">
-          Stay tuned for our upcoming ContinualAI seminar on 
-          <strong>Thursday, January 30th, at 6 PM CET / 9 AM PT / 12 AM ET</strong>! We’ll host a Task-agnostic continual learning for the open world topic. 
-        </p>
-        <p class="event-link">
+      <!-- Main Column: "Next Event" -->
+      <section class="col-12 col-md-8 event-section">
+        <h2 id="event-section-title" class="event-title">Upcoming Seminar</h2>
+        <h3 class="event-subtitle">Task-Agnostic Continual Learning for the Open World</h3>
+        <div class="event-details mb-3">
+          <p><strong>Date & Time:</strong> Thursday, January 30th, 2025</p>
+          <p><strong>Time Zones:</strong> 6 PM CET / 9 AM PT / 12 PM ET</p>
+        </div>
+        <div class="event-speakers mb-3">
+          <h4>Speakers:</h4>
+          <div class="speaker mb-3">
+            <img src="{{ site.baseurl }}images/seminar/2025s1/Guseppe_Bravo.jpg" alt="Giuseppe Bravo-Rocca" class="speaker-photo" loading="lazy">
+            <div class="speaker-info">
+              <strong>Giuseppe Bravo-Rocca</strong><br>
+              AI Engineer & PhD Candidate, UPC BarcelonaTech<br>
+              Barcelona Supercomputing Center<br>
+              <a href="https://gusseppe.github.io" target="_blank" rel="noopener">Website</a>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="{{ site.baseurl }}images/seminar/2025s1/Megan_Baker.jpg" alt="Megan Baker" class="speaker-photo" loading="lazy">
+            <div class="speaker-info">
+              <strong>Megan Baker</strong><br>
+              Senior Data Scientist, Johns Hopkins University Applied Physics Laboratory<br>
+              Supervisor, AI Development Section<br>
+              <a href="https://www.linkedin.com/in/megan-baker-b6875396" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="event-actions">
           <a href="https://stanford.zoom.us/j/95204198748?pwd=z3gpyxrUqPJSip9tGa75OrSUrcznjx.1" class="btn btn-primary" target="_blank" rel="noopener">
-            Join in the Seminar
+            Join the Seminar
           </a>
-        </p>
-        <p><strong>Password:</strong> <code>530722</code></p>        
-      </div>
+          <p class="mt-2"><strong>Password:</strong> <code>530722</code></p>
+        </div>
+      </section>
 
       <!-- Sidebar Column: Latest News -->
-      <aside class="col-12 col-md-4 news-sidebar-wrapper">
+      <aside class="col-12 col-md-4 news-sidebar-wrapper" aria-labelledby="latest-news-title">
         <div class="news-sidebar">
-          <h3>Latest News</h3>
-          <ul>
-            <!-- Add or remove <li> items to easily update news -->
+          <h3 id="latest-news-title">Latest News</h3>
+          <ul class="list-unstyled">
             <li>
-              <strong>Jan 30, 2025:</strong> First <em>ContinualAI seminar</em> in 2025.
+              <strong>Feb 27, 2025:</strong> Second <em>ContinualAI Seminar</em> of the year. 
+            </li>            
+            <li>
+              <strong>Jan 30, 2025:</strong> First <em>ContinualAI Seminar</em> of the year.
+              <a href="https://example.com" target="_blank" rel="noopener">Read more</a>
             </li>
+            <li>
+              <strong>Jan 24, 2025:</strong> New ContinulAI website launched.
+            </li>
+            <!-- Add more news items here -->
           </ul>
         </div>
       </aside>
-      
+
     </div>
   </div>
 </div>
 
-<!-- Inline CSS to style our intro and news strip -->
+<!-- Inline CSS for Styling -->
 <style>
+  /* Grey Background for the Strip-News Section */
+  .bg-grey {
+    background-color: #f0f0f0; /* Light grey background */
+    border-top: 1px solid #e0e0e0; /* Optional: subtle top border */
+    border-bottom: 1px solid #e0e0e0; /* Optional: subtle bottom border */
+  }
 
-/* EVENT + NEWS STYLES */
-.strip-news {
-  background: #fafafa; /* or your preferred background color */
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
+  .container.py-4 {
+    padding-top: 1.5rem !important; /* Adjust top padding */
+    padding-bottom: 1.5rem !important; /* Adjust bottom padding */
+  }
 
-/* Event Section */
-.event-section {
-  margin-bottom: 2rem;
-}
-.event-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-.event-description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-.event-link .btn.btn-primary {
-  margin-top: 0.5rem;
-}
+  /* Speaker Section Styling */
+  .speaker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .speaker-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .speaker-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .speaker-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .event-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  .event-title {
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  .event-details p {
+    margin-bottom: 0.5rem;
+    color: #555; /* Medium grey for details */
+  }
+  
+  .event-actions .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  @media (min-width: 768px) {
+    .event-actions .btn {
+      width: auto;
+    }
+  }
 
-/* News Sidebar */
-.news-sidebar-wrapper {
-  margin-top: 2rem;
-}
-.news-sidebar {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-.news-sidebar h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-.news-sidebar ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-.news-sidebar li {
-  margin-bottom: 1rem;
-}
-.news-sidebar li strong {
-  color: #dc2430;
-}
+  /* Latest News Styling */
+  .news-sidebar h3 {
+    color: #333; /* Darker text for better contrast */
+    margin-bottom: 1rem;
+  }
+
+  .news-sidebar ul li {
+    margin-bottom: 0.75rem;
+    color: #555; /* Medium grey for news items */
+  }
 </style>
 
 
