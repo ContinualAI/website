@@ -50,8 +50,7 @@ weight: 1
 >
 > ### 🌟 **Join the Seminar**
 >
-> - [**Click here to join the seminar**](https://stanford.zoom.us/j/95204198748?pwd=z3gpyxrUqPJSip9tGa75OrSUrcznjx.1)  
-> - **Password**: `530722`
+> - [**Click here to join the seminar**](https://stanford.zoom.us/meeting/register/11J-qoejS9yeIqqyAlqGpw)  
 
 ---
 
