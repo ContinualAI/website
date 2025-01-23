@@ -8,8 +8,8 @@ weight: 1
 
 > **Description:**
 >
-> - Seminars hosted by **ContinualAI** bring together researchers and enthusiasts to discuss cutting-edge topics in **Continual Learning**. Each session lasts **60 minutes**, with **40 minutes of presentations**, often delivered by the authors of recent groundbreaking research.
-> - 📅 **Join us last Thursday of the month** for insights into the latest developments in Continual Learning.
+> - Seminars hosted by **ContinualAI** bring together researchers and enthusiasts to discuss cutting-edge topics in **Continual Learning**. Each session lasts **60 minutes**, with **40 minutes of presentations**, delivered by the authors of recent groundbreaking research.
+> - 📅 **Join us last Thursday of the month at 6 PM CET / 9 AM PT / 12 PM ET** for insights into the latest developments in Continual Learning.
 
 ---
 
@@ -32,7 +32,6 @@ weight: 1
 >
 > **Gusseppe Bravo-Rocca**  
 > *AI Engineer & PhD Candidate in AI, UPC BarcelonaTech*  
-> **Barcelona Supercomputing Center**  
 > [Link](https://gusseppe.github.io)  
 >
 > Gusseppe specializes in cognitive architectures and continual learning. He develops monitoring agents at the Barcelona Supercomputing Center and collaborates with organizations like Lenovo and the Emory Global Diabetes Research Center. His open-source contributions include advanced continual learning algorithms and custom agent architectures that address critical machine learning challenges such as distribution drift, feature attribution shifts, and model degradation. Giuseppe’s research has been published in top-tier venues and honored with awards like the Intel-Lenovo AI Innovators Award.
@@ -43,7 +42,6 @@ weight: 1
 >
 > **Megan Baker**  
 > *Senior Data Scientist, Johns Hopkins University Applied Physics Laboratory*  
-> **Supervisor, AI Development Section, Artificial Intelligence Group**  
 > [Link](https://www.linkedin.com/in/megan-baker-b6875396)
 >
 > Megan is a Senior Data Scientist at the Johns Hopkins University Applied Physics Laboratory, holding a B.S. in Bioinformatics, an M.S. in Applied and Computational Mathematics, and an upcoming M.S. in Computer Science. As the Supervisor of the AI Development Section, she leads initiatives to advance AI capabilities, tackling complex, multidisciplinary challenges across domains such as biological signal processing, remote sensing, and lifelong learning systems. Megan is dedicated to leveraging cutting-edge AI to push the boundaries of what’s possible in diverse technical fields.
