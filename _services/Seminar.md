@@ -28,7 +28,7 @@ weight: 1
 >
 > ### 🎤 **Speakers**
 >
-> #### <img src="{{ site.baseurl }}images/seminar/2025s1/Guseppe_Bravo.jpg" alt="Gusseppe Bravo-Rocca" width="200px" height="200px" style="border-radius: 20%; margin-right: 20px;" />
+> #### <img src="{{ site.baseurl }}/images/seminar/2025s1/Guseppe_Bravo.jpg" alt="Gusseppe Bravo-Rocca" width="200px" height="200px" style="border-radius: 20%; margin-right: 20px;" />
 >
 > **Gusseppe Bravo-Rocca**  
 > *AI Engineer & PhD Candidate in AI, UPC BarcelonaTech*  
@@ -39,7 +39,7 @@ weight: 1
 >
 > ---
 >
-> #### <img src="{{ site.baseurl }}images/seminar/2025s1/Megan_Baker.jpg" alt="Megan Baker" width="200px" height="200px" style="border-radius: 20%; margin-right: 20px;" />
+> #### <img src="{{ site.baseurl }}/images/seminar/2025s1/Megan_Baker.jpg" alt="Megan Baker" width="200px" height="200px" style="border-radius: 20%; margin-right: 20px;" />
 >
 > **Megan Baker**  
 > *Senior Data Scientist, Johns Hopkins University Applied Physics Laboratory*  
