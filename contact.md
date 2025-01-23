@@ -11,18 +11,19 @@ Are you curious about *ContinualAI* and its mission? Check out our [introductory
 ---
 
 <!-- Contact Us Box with Emojis -->
-<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <h3 style="margin-top: 0;"><strong>📞 Contact Us</strong></h3>
-    <p><strong>Email:</strong> <em>contact@continualai.org</em></p>
-    <p><strong>Mailing List:</strong> <a href="https://groups.google.com/forum/#!forum/continualai" target="_blank">📬 Continual Learning and AI News</a></p>
-    <p><strong>Medium:</strong> <a href="https://medium.com/continual-ai" target="_blank">📝 Continual AI Publication</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/ContinualAI" target="_blank">🐙 Continual AI Organization</a></p>
-    <p><strong>Social Media:</strong></p>
-    <p>
-        <a href="https://www.facebook.com/ContinualAI" target="_blank">📘 Facebook</a> | 
-        <a href="https://twitter.com/ContinualAI" target="_blank">🐦 Twitter</a> | 
-        <a href="https://www.linkedin.com/company/12607275/" target="_blank">🔗 LinkedIn</a> | 
-        <a href="https://www.youtube.com/channel/UCD9_bqN3gX-TLxcr47vvMmA" target="_blank">📺 YouTube</a>
+<div style="background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); font-family: Arial, sans-serif;">
+    <h3 style="margin-top: 0; font-size: 24px; font-weight: bold;">📞 Contact Us</h3>
+    <ul style="list-style: none; padding: 0; margin: 15px 0; line-height: 1.8;">
+        <li><strong>Email:</strong> <a href="mailto:contact@continualai.org" style="text-decoration: none;">contact@continualai.org</a></li>
+        <li><strong>Mailing List:</strong> <a href="https://groups.google.com/forum/#!forum/continualai" target="_blank" style="text-decoration: none;">📬 Continual Learning and AI News</a></li>
+        <li><strong>Medium:</strong> <a href="https://medium.com/continual-ai" target="_blank" style="text-decoration: none;">📝 Continual AI Publication</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ContinualAI" target="_blank" style="text-decoration: none;">🐙 Continual AI Organization</a></li>
+    </ul>
+    <p style="margin: 15px 0; font-size: 16px; font-weight: bold;">Follow us on social media:</p>
+    <p style="margin: 0; font-size: 16px;">
+        <a href="https://www.facebook.com/ContinualAI" target="_blank" style="text-decoration: none; margin-right: 10px;">📘 Facebook</a> | 
+        <a href="https://twitter.com/ContinualAI" target="_blank" style="text-decoration: none; margin-left: 10px;">🐦 Twitter</a> | 
+        <a href="https://www.youtube.com/channel/UCD9_bqN3gX-TLxcr47vvMmA" target="_blank" style="text-decoration: none; margin-left: 10px;">📺 YouTube</a>
     </p>
 </div>
 
