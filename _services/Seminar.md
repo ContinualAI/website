@@ -9,19 +9,19 @@ weight: 1
 > **Description:**
 >
 > - Seminars hosted by **ContinualAI** bring together researchers and enthusiasts to discuss cutting-edge topics in **Continual Learning**. Each session lasts **60 minutes**, with **40 minutes of presentations**, delivered by the authors of recent groundbreaking research.
-> - 📅 **Join us last Thursday of the month at 6 PM CET / 9 AM PT / 12 PM ET** for insights into the latest developments in Continual Learning.
+> - 📅 **Join us first Thursday of the month at 6 PM CET / 9 AM PT / 12 PM ET** for insights into the latest developments in Continual Learning.
 
 ---
 
 # 📢 Upcoming Seminar
 
 > ## **Task-Agnostic Continual Learning for the Open World**
-> #### <img src="{{ site.baseurl }}/images/seminar/2025s1/cl_seminars_2025_Jan.png"/>
+> #### <img src="{{ site.baseurl }}/images/seminar/2025s1/cl_seminars_2025_1.png"/>
 > ---
 >
 > ### 📅 **Date & Time**
 >
-> - **Thursday, January 30th**
+> - **Thursday, February 6th**
 > - **6 PM CET / 9 AM PT / 12 PM ET**
 >
 > ---
