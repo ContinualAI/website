@@ -1,0 +1,26 @@
+upcoming_seminar:
+  title: "Upcoming Seminar"
+  subtitle: "Open-Vocabulary Learning"
+  date: "Thursday, April 3rd, 2025"
+  time_zones: "6 PM CET / 9 AM PT / 12 PM ET"
+  speakers:
+    - name: "Ming-Xuan Liu"
+      role: "PhD student in Deep Learning and Computer Vision at the University of Trento, "
+      link: "https://oatmealliu.github.io"
+      image: "/images/seminar/2025s3/mingxuanliu.jpg"
+    - name: "Monika Wysoczańska"
+      role: "PhD student in Computer Vision and Machine Learning in the Computer Vision Lab of Warsaw University of Technology."
+      link: "https://wysoczanska.github.io"
+      image: "/images/seminar/2025s3/Monika.jpeg"
+  registration_link: "https://stanford.zoom.us/meeting/register/Ir98lwaISLSDZKFBd9TRGQ#/registration"
+
+latest_news:
+  - date: "April 3, 2025"
+    text: "Our third seminar introduced the innovative topic of Open-Vocabulary Learning, challenging conventional boundaries and sparking new research discussions."
+  - date: "Mar 6, 2025"
+    text: "In our second ContinualAI Seminar of the year, we delved into efficient fine-tuning techniques—including adapters, LoRA, and beyond—to advance model optimization."
+  - date: "Feb 6, 2025"
+    text: "Kicking off the year, our first ContinualAI Seminar delved into Task-Agnostic Continual Learning for the Open World."
+  - date: "Jan 24, 2025"
+    text: "New ContinulAI website launched."
+

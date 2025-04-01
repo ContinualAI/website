@@ -1,2 +1,93 @@
 .page-home {
-}
+
+    
+    /* INTRO SECTION with Animation */
+    .intro {
+      &.animate__animated.animate__fadeInUp {
+        // Additional intro-specific styles can go here if needed.
+      }
+    }
+  
+    /* Strip-News Section */
+    .strip {
+      &.strip-news {
+        &.animate__animated.animate__fadeInUp {
+          background-color: #FDF6F8; // Light grey background (nearly pink) as before
+        }
+        .container {
+          &.py-4,
+          &.py-md-6 {
+            padding-top: 1.5rem !important; // Adjust top padding
+            padding-bottom: 1.5rem !important; // Adjust bottom padding
+          }
+        }
+      }
+    }
+  
+    /* Speaker Section Styling */
+    .speaker {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+  
+      .speaker-photo {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+  
+      .speaker-info {
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    /* Event Section Styling */
+    .event-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #333; // Darker text for better contrast
+    }
+  
+    .event-title {
+      color: #333; // Darker text for better contrast
+    }
+  
+    .event-details {
+      p {
+        margin-bottom: 0.5rem;
+        color: #555; // Medium grey for details
+      }
+    }
+  
+    .event-actions {
+      .btn {
+        width: 100%;
+        max-width: 200px;
+        
+        @media (min-width: 768px) {
+          width: auto;
+        }
+      }
+    }
+  
+    /* Latest News Styling */
+    .news-sidebar {
+      h3 {
+        color: #333; // Darker text for better contrast
+        margin-bottom: 1rem;
+      }
+      
+      ul {
+        li {
+          margin-bottom: 0.75rem;
+          color: #555; // Medium grey for news items
+        }
+      }
+    }
+  }
+  

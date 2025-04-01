@@ -1,0 +1,37 @@
+previous:
+  - order: 7
+    title: "ContinualAI March 2025 Seminar/Meetup"
+    topic: "Efficient fine-tuning techniques—including adapters, LoRA, and beyond—to advance model optimization."
+    date: "Thursday, March 6th, 2025"
+    speakers:
+      - "Eric Nuertey Coleman (University of Pisa)"
+      - "Wentao Zhang (Sun Yat-sen University)"
+    image: "/images/seminar/2025s2/cl_seminars_2025_2.jpeg"
+    link: "https://www.youtube.com/watch?v=EkL_WP-K1mE"
+  - order: 8
+    title: "ContinualAI February 2025 Seminar/Meetup"
+    topic: "Task-Agnostic Continual Learning for the Open World"
+    date: "Thursday, February 6th, 2025"
+    speakers:
+      - "Giuseppe Bravo-Rocca (AI Engineer & PhD Candidate, UPC BarcelonaTech)"
+      - "Megan Baker (Senior Data Scientist, Johns Hopkins University Applied Physics Laboratory)"
+    image: "/images/seminar/2025s1/cl_seminars_2025_1.png"
+    link: "https://www.youtube.com/watch?v=LMtnVBFfgPc"
+  - order: 9
+    title: "ContinualAI April 2023 Seminar/Meetup"
+    topic: "Continual Learning in Language Models"
+    speakers:
+      - "Joel Jang (KAIST)"
+      - "Yujia Qin & Jiajie Zhang (Tsinghua University)"
+      - "Zixuan Ke (University of Illinois, Chicago)"
+    image: "https://img.youtube.com/vi/FmfRukpRKjg/0.jpg"
+    link: "https://www.youtube.com/watch?v=FmfRukpRKjg"
+  - order: 10
+    title: "ContinualAI March 2023 Seminar/Meetup"
+    topic: "Bridging the Gap: Evaluating and Applying Continual Learning"
+    speakers:
+      - "Matthias De Lange (KU Leuven)"
+      - "Camila González (Technical University of Darmstadt)"
+      - "Soroor Hediyeh-zadeh (Computational Health Center, Helmholtz Munich)"
+    image: "https://img.youtube.com/vi/T2IYBSyug6w/0.jpg"
+    link: "https://www.youtube.com/watch?v=T2IYBSyug6w"

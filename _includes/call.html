@@ -7,7 +7,9 @@
     
     <!-- Button aligned to the right -->
     {% if include.show_button %}
-      <a href="{{ site.data.contact.contact_button_link }}" class="button call-button" style="padding: 10px 30px; background-color: #e5261f; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2em; display: inline-flex; justify-content: center; align-items: center; height: 50px; min-width: 120px;">{{ site.data.contact.contact_button_text | default: "JOIN" }}</a>
-    {% endif %}
+    <a href="{{ site.data.contact.contact_button_link }}" class="button call-button">
+      {{ site.data.contact.contact_button_text | default: "JOIN" }}
+    </a>
+        {% endif %}
   </div>
 </div>
