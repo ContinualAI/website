@@ -1,6 +1,6 @@
 baseurl: '/website/'
 remote_theme: zerostaticthemes/jekyll-serif-theme
-url: "https://continualai.github.io/website"
+url: "https://www.continualai.org"
 permalink: pretty
 title: 'ContinualAI'
 
