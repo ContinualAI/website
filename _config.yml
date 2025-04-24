@@ -1,4 +1,4 @@
-baseurl: '/website/'
+baseurl: ''
 remote_theme: zerostaticthemes/jekyll-serif-theme
 url: "https://www.continualai.org"
 permalink: pretty
