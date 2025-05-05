@@ -3,20 +3,43 @@ title: Contact
 layout: default
 bodyClass: "page-contact"
 ---
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+
 <div class="intro animate__animated animate__slideInRight">
-    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-        <div class="row justify-content-start">
-            <div class="col-12 col-md-8">
-                <div class="service service-single">
-                    <h1 class="title">{{page.title}}</h1>
-                    {% include call.html show_button=false %}
-                    <div class="content mt-4">{{content}}</div>
-                </div>
+  <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-8">
+        <div class="service service-single">
+          <h1 class="title">{{ page.title }}</h1>
+
+          <!-- Direct “Join us on Slack” call-to-action -->
+          <div class="call" style="margin: 2rem 0; text-align: center;">
+            <div
+              class="call-box-top call-container"
+              style="display: inline-flex; align-items: center; padding: 1rem 2rem; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;"
+            >
+              {% if site.data.contact.contact_sentence %}
+                <p class="call-sentence" style="margin: 0 1rem 0 0; font-size: 1.1rem;">
+                  {{ site.data.contact.contact_sentence }}
+                </p>
+              {% endif %}
+              <a
+                href="https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw"
+                class="button call-button"
+                style="padding: 0.6rem 1.2rem; font-weight: bold;"
+              >
+                🔗 Join us on Slack
+              </a>
             </div>
+          </div>
+
+          <div class="content mt-4">{{ content }}</div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

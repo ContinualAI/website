@@ -29,8 +29,6 @@ Are you curious about *ContinualAI* and its mission? Check out our [introductory
 
 ---
 
-**ContinualAI** is an open and inclusive community. We welcome new members to join our collaborative projects or engage in discussions about continual learning (CL). [Join us on Slack](https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw) today!
-
 <!-- Join Us on Slack Box -->
 <div style="text-align:center; background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-top: 25px; font-size: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
     <a href="https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw" target="_blank" style="text-decoration: none; color: #333;">
