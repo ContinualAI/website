@@ -1,4 +1,3 @@
-# _data/contact.yml
-contact_button_link: "https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw"
-contact_button_text: "Join us on Slack"
-contact_sentence: "**ContinualAI** is an open and inclusive community. We welcome new members to join our collaborative projects or engage in discussions about continual learning (CL)."
+contact_button_link: 'contact'
+contact_button_text: 'Join'
+contact_sentence: 'Want to become part of our amazing community? Join us today!'  # Add this sentence
