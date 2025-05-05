@@ -7,9 +7,9 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# ✨ Our Services
+# ✨ Our Activities
 
-At **ContinualAI**, we are dedicated to advancing continual learning research by connecting researchers, sharing ideas, and producing original work in this fundamental area of AI.
+At **ContinualAI**, a nonprofit dedicated to advancing continual learning research, we bring together researchers, share ideas, and produce original work in this foundational area of AI.
 
 ### 🎓 **Seminars**
 ---
@@ -23,6 +23,6 @@ At **ContinualAI**, we are dedicated to advancing continual learning research by
 ### 📚 **Comprehensive Courses**
 ---
 
-And so much more!
+…and much more!
 
-💡 **Ready to embark on your journey in AI?** Explore our resources, connect with our community, and shape the future of AI together with **ContinualAI**!
+💡 **Ready to embark on your journey in AI?** Explore our resources, connect with our community, and help shape the future of AI with **ContinualAI**!

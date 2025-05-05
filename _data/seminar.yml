@@ -1,5 +1,24 @@
 previous:
-  - order: 7
+  - order: 4
+    title: "ContinualAI May 2025 Seminar/Meetup"
+    topic: "Unlearning in continual scenarios."
+    date: "Thursday, May 8th, 2025"
+    speakers:
+      - "Zhenyi Wang (University of Maryland, College Park)"
+      - "Sijia Liu (Michigan State University)"
+      - "Kairan Zhao (University of Warwick)"
+    image: "/images/seminar/2025s4/cl_seminars_2025_may.png"
+    link: ""
+  - order: 5
+    title: "ContinualAI April 2025 Seminar/Meetup"
+    topic: "Open-Vocabulary Learning."
+    date: "Thursday, April 3th, 2025"
+    speakers:
+      - "Ming-Xuan Liu (University of Trento)"
+      - "Monika Wysoczańska (Warsaw University of Technology)"
+    image: "/images/seminar/2025s3/cl_seminars_2025_april.png"
+    link: "https://www.youtube.com/watch?v=IrsKeJrPTp0&list=PLm6QXeaB-XkBMFxvgZvYjqhaPgGg8Um9Z"
+  - order: 4
     title: "ContinualAI March 2025 Seminar/Meetup"
     topic: "Efficient fine-tuning techniques—including adapters, LoRA, and beyond—to advance model optimization."
     date: "Thursday, March 6th, 2025"
@@ -8,7 +27,7 @@ previous:
       - "Wentao Zhang (Sun Yat-sen University)"
     image: "/images/seminar/2025s2/cl_seminars_2025_2.jpeg"
     link: "https://www.youtube.com/watch?v=EkL_WP-K1mE"
-  - order: 8
+  - order: 3
     title: "ContinualAI February 2025 Seminar/Meetup"
     topic: "Task-Agnostic Continual Learning for the Open World"
     date: "Thursday, February 6th, 2025"
@@ -17,7 +36,7 @@ previous:
       - "Megan Baker (Senior Data Scientist, Johns Hopkins University Applied Physics Laboratory)"
     image: "/images/seminar/2025s1/cl_seminars_2025_1.png"
     link: "https://www.youtube.com/watch?v=LMtnVBFfgPc"
-  - order: 9
+  - order: 2
     title: "ContinualAI April 2023 Seminar/Meetup"
     topic: "Continual Learning in Language Models"
     speakers:
@@ -26,7 +45,7 @@ previous:
       - "Zixuan Ke (University of Illinois, Chicago)"
     image: "https://img.youtube.com/vi/FmfRukpRKjg/0.jpg"
     link: "https://www.youtube.com/watch?v=FmfRukpRKjg"
-  - order: 10
+  - order: 1
     title: "ContinualAI March 2023 Seminar/Meetup"
     topic: "Bridging the Gap: Evaluating and Applying Continual Learning"
     speakers:

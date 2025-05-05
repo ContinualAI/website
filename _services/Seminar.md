@@ -11,34 +11,30 @@ weight: 1
 > - Seminars hosted by **ContinualAI** bring together researchers and enthusiasts to discuss cutting-edge topics in **Continual Learning**. Each session lasts **60 minutes**, with **40 minutes of presentations**, delivered by the authors of recent groundbreaking research.
 > - 📅 **Join us first Thursday of the month at 6 PM CET / 9 AM PT / 12 PM ET** for insights into the latest developments in Continual Learning.
 
-# 🎥 Previous Seminars
+## 🎥 Previous Seminars
 
-{% for seminar in site.data.seminar.previous %}
-> ## **{{ seminar.order }}. {{ seminar.title }}**
-> 
+{% assign sorted_prev = site.data.seminar.previous | sort: "order" | reverse %}
+{% for seminar in sorted_prev %}
+> ## **{{ forloop.index }}. {{ seminar.title }}**
+>
 > **Topic:** *"{{ seminar.topic }}"*
-> 
+>
 > {% if seminar.date %}
 > **Date:** **{{ seminar.date }}**
 > {% endif %}
-> 
+>
 > **Speakers:**
 > {% for speaker in seminar.speakers %}
 > - <small>**{{ speaker }}**</small>
 > {% endfor %}
-> 
+>
+> {% if seminar.link %}
 > **Link:** [**Join / Watch Seminar**]({{ seminar.link }})
-> 
+> {% else %}
+> **Link:** Coming soon
+> {% endif %}
+>
 > [![{{ seminar.title }}]({% if seminar.image contains "://" %}{{ seminar.image }}{% else %}{{ site.baseurl }}{{ seminar.image }}{% endif %})]({{ seminar.link }})
 >
 > ---
 {% endfor %}
-
-> **Explore highlights from recent seminars to gain valuable insights into Continual Learning.**
->
-> ## 🌐 For a comprehensive view of all our seminars, visit:
-> - 🎥 [**ContinualAI YouTube Channel**](https://www.youtube.com/@ContinualAI)
-> - 📺 [**Seminar Playlist**](https://www.youtube.com/playlist?list=PLm6QXeaB-XkBMFxvgZvYjqhaPgGg8Um9Z)
->
-> Stay connected with the ContinualAI community for updates on future events and discussions!
-
