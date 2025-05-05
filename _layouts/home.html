@@ -32,21 +32,21 @@ bodyClass: "page-home"
   </div>
 </div>
 
-<!-- Upcoming Seminar + News Strip -->
+<!-- Upcoming Seminar + News Strip (70/20 split, inline countdown) -->
 <div class="strip strip-grey animate__animated animate__fadeInUp">
   <div class="container py-6">
-    <div class="row justify-content-center gx-5">
+    <div class="d-flex justify-content-between flex-wrap">
 
-      <!-- Event Card -->
-      <section class="col-12 col-lg-6">
+      <!-- 70% Event Column -->
+      <div class="event-wrapper" style="flex:7; min-width:300px;">
         <div class="event-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
           {% assign seminar = site.data.news.upcoming_seminar %}
           <h2 class="mb-1"><strong>{{ seminar.title }}</strong></h2>
           <p class="text-secondary mb-4">{{ seminar.subtitle }}</p>
 
-          <!-- Countdown -->
+          <!-- Inline Countdown -->
           <div class="event-countdown mb-4 animate__animated animate__pulse animate__infinite">
-            <div id="countdown" class="d-flex justify-content-center align-items-center"></div>
+            <div id="countdown"></div>
           </div>
 
           <!-- Details -->
@@ -72,16 +72,15 @@ bodyClass: "page-home"
 
           <!-- Action -->
           <div class="text-end mt-4">
-            <a href="{{ seminar.registration_link }}" 
-               class="btn btn-primary">
+            <a href="{{ seminar.registration_link }}" class="btn btn-primary">
               Join the Seminar
             </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- News Card -->
-      <aside class="col-12 col-md-5 col-lg-3">
+      <!-- 20% News Column -->
+      <div class="news-wrapper" style="flex:2; min-width:200px;">
         <div class="news-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
           <h3 class="mb-3"><strong>Latest News</strong></h3>
           <ul class="list-unstyled mb-0">
@@ -96,7 +95,7 @@ bodyClass: "page-home"
             {% endfor %}
           </ul>
         </div>
-      </aside>
+      </div>
 
     </div>
   </div>
@@ -160,57 +159,41 @@ bodyClass: "page-home"
 {% endif %}
 
 <style>
-  .event-countdown #countdown {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    gap: 0.5rem;
-  }
-  .event-countdown #countdown .unit {
-    text-align: center;
-  }
-  .event-countdown #countdown .unit small {
-    display: block;
-    font-size: 0.6rem;
-    color: #666;
-  }
-  .event-countdown #countdown .sep {
-    font-size: 2.5rem;
-    line-height: 1;
+  #countdown {
+    font-size: 2rem;
     color: #333;
+    text-align: center;
+    white-space: nowrap;
   }
+  #countdown span { margin: 0 0.25rem; }
 </style>
-
-<!-- Countdown Script -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", () => {
     const target = new Date("{{ seminar.date | date: "%Y-%m-%dT%H:%M:%S" }}Z");
     const el = document.getElementById("countdown");
 
-    function render() {
+    const pad = n => String(n).padStart(2, '0');
+    function update() {
       const now = new Date();
       let diff = target - now;
       if (diff <= 0) {
-        el.innerHTML = "<strong>We're live now!</strong>";
+        el.textContent = "We're live now!";
         clearInterval(timer);
         return;
       }
-      const days = Math.floor(diff / 86400000); diff %= 86400000;
+      const days  = Math.floor(diff / 86400000); diff %= 86400000;
       const hours = Math.floor(diff / 3600000);   diff %= 3600000;
-      const mins = Math.floor(diff / 60000);      diff %= 60000;
-      const secs = Math.floor(diff / 1000);
+      const mins  = Math.floor(diff / 60000);      diff %= 60000;
+      const secs  = Math.floor(diff / 1000);
 
       el.innerHTML =
-        `<div class="unit">${days}<small>Days</small></div>` +
-        `<div class="sep">:</div>` +
-        `<div class="unit">${hours}<small>Hrs</small></div>` +
-        `<div class="sep">:</div>` +
-        `<div class="unit">${mins}<small>Min</small></div>` +
-        `<div class="sep">:</div>` +
-        `<div class="unit">${secs}<small>Sec</small></div>`;
+        `<span>${pad(days)} day</span>, ` +
+        `<span>${pad(hours)} hours</span>, ` +
+        `<span>${pad(mins)} mint</span>, ` +
+        `<span>${pad(secs)} secs</span>`;
     }
 
-    render();
-    const timer = setInterval(render, 1000);
+    update();
+    const timer = setInterval(update, 1000);
   });
 </script>
