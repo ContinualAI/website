@@ -45,6 +45,16 @@ bodyClass: "page-home"
           <p><strong>Date & Time:</strong> {{ seminar.date }}</p>
           <p><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
         </div>
+
+        <!-- Countdown Timer -->
+        <div class="event-countdown mb-4">
+          <h4>Starts in:</h4>
+          <div id="countdown-timer" class="h3"></div>
+          <button id="restart-countdown" class="btn btn-sm btn-outline-secondary mt-2">
+            Restart Countdown
+          </button>
+        </div>
+
         <div class="event-speakers mb-3">
           <h4>Speakers:</h4>
           {% for speaker in seminar.speakers %}
@@ -86,8 +96,6 @@ bodyClass: "page-home"
     </div>
   </div>
 </div>
-
-
 
 <!-- Services Strip (unchanged) -->
 <div class="strip">
@@ -145,3 +153,47 @@ bodyClass: "page-home"
 </div>
 {% endif %}
 
+<!-- Countdown Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Parse seminar date and time (expects "YYYY-MM-DD HH:MM" format)
+  const seminarDate = new Date('{{ seminar.date | date: "%Y-%m-%d %H:%M" }}').getTime();
+  let target = seminarDate;
+
+  const timerEl   = document.getElementById('countdown-timer');
+  const restartBtn = document.getElementById('restart-countdown');
+  let intervalId;
+
+  function updateCountdown() {
+    const now  = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      timerEl.textContent = '🟢 Seminar is live!';
+      clearInterval(intervalId);
+      intervalId = null;
+      return;
+    }
+
+    const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60))      / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60))           / 1000);
+
+    timerEl.textContent = 
+      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  restartBtn.addEventListener('click', () => {
+    target = seminarDate;
+    if (!intervalId) {
+      updateCountdown();
+      intervalId = setInterval(updateCountdown, 1000);
+    }
+  });
+
+  // Start ticking
+  updateCountdown();
+  intervalId = setInterval(updateCountdown, 1000);
+});
+</script>
