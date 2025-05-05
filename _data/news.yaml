@@ -1,18 +1,22 @@
 upcoming_seminar:
   title: "Upcoming Seminar"
-  subtitle: "Open-Vocabulary Learning"
-  date: "Thursday, April 3rd, 2025"
+  subtitle: "Unlearning in continual scenarios"
+  date: "Thursday, May 8th, 2025"
   time_zones: "6 PM CET / 9 AM PT / 12 PM ET"
   speakers:
-    - name: "Ming-Xuan Liu"
+    - name: "Zhenyi Wang"
       role: "PhD student in Deep Learning and Computer Vision at the University of Trento, "
       link: "https://oatmealliu.github.io"
       image: "/images/seminar/2025s3/mingxuanliu.jpg"
-    - name: "Monika Wysoczańska"
+    - name: "Sijia Liu"
       role: "PhD student in Computer Vision and Machine Learning in the Computer Vision Lab of Warsaw University of Technology."
       link: "https://wysoczanska.github.io"
       image: "/images/seminar/2025s3/Monika.jpeg"
-  registration_link: "https://stanford.zoom.us/meeting/register/Ir98lwaISLSDZKFBd9TRGQ#/registration"
+    - name: "Kairan Zhao"
+      role: "PhD student in Computer Vision and Machine Learning in the Computer Vision Lab of Warsaw University of Technology."
+      link: "https://wysoczanska.github.io"
+      image: "/images/seminar/2025s3/Monika.jpeg"
+  registration_link: "https://stanford.zoom.us/meeting/register/2Iq30puITbydIGeuCtzrug"
 
 latest_news:
   - date: "April 3, 2025"
