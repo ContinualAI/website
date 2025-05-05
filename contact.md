@@ -6,7 +6,7 @@ description: Contact
 
 ### Learn More About ContinualAI
 
-Are you curious about *ContinualAI* and its mission? Check out our [introductory blog post](https://medium.com/continual-ai/continualai-a-non-profit-research-organization-on-continual-learning-for-ai-a2df70a68d2c) and our [YouTube video](https://www.youtube.com/watch?v=GItaVgvNwgI).
+Are you curious about *ContinualAI*? Check out our [introductory blog post](https://medium.com/continual-ai/continualai-a-non-profit-research-organization-on-continual-learning-for-ai-a2df70a68d2c) and our [YouTube video](https://www.youtube.com/watch?v=GItaVgvNwgI), and [Join us on Slack](https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw) today!
 
 ---
 
@@ -16,6 +16,7 @@ Are you curious about *ContinualAI* and its mission? Check out our [introductory
     <ul style="list-style: none; padding: 0; margin: 15px 0; line-height: 1.8;">
         <li><strong>Email:</strong> <a href="mailto:contact@continualai.org" style="text-decoration: none;">contact@continualai.org</a></li>
         <li><strong>Mailing List:</strong> <a href="https://groups.google.com/forum/#!forum/continualai" target="_blank" style="text-decoration: none;">📬 Continual Learning and AI News</a></li>
+        <li><strong>Slack:</strong> <a href="https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw" target="_blank" style="text-decoration: none;">💬 Join our Slack Workspace</a></li>
         <li><strong>Medium:</strong> <a href="https://medium.com/continual-ai" target="_blank" style="text-decoration: none;">📝 Continual AI Publication</a></li>
         <li><strong>GitHub:</strong> <a href="https://github.com/ContinualAI" target="_blank" style="text-decoration: none;">🐙 Continual AI Organization</a></li>
     </ul>
@@ -27,16 +28,6 @@ Are you curious about *ContinualAI* and its mission? Check out our [introductory
     </p>
 </div>
 
----
-
-**ContinualAI** is an open and inclusive community. We welcome new members to join our collaborative projects or engage in discussions about continual learning (CL). [Join us on Slack](https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw) today!
-
-<!-- Join Us on Slack Box -->
-<div style="text-align:center; background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-top: 25px; font-size: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <a href="https://join.slack.com/t/continualai/shared_invite/zt-2y0yj6js4-7jA_t2gGvC6QQEXujjdRcw" target="_blank" style="text-decoration: none; color: #333;">
-        <strong>🔗 Join Us on Slack</strong>
-    </a>
-</div>
 
 ---
 
