@@ -32,44 +32,40 @@ bodyClass: "page-home"
   </div>
 </div>
 
+<!-- Upcoming Seminar + Countdown -->
 <div class="strip strip-grey animate__animated animate__fadeInUp" aria-labelledby="event-section-title">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row">
-      
+
       <!-- Main Column: "Upcoming Seminar" -->
       <section class="col-12 col-md-8 event-section">
         {% assign seminar = site.data.news.upcoming_seminar %}
         <h2 id="event-section-title" class="event-title"><strong>{{ seminar.title }}</strong></h2>
         <h3 class="event-subtitle">{{ seminar.subtitle }}</h3>
+
+        <div class="event-countdown mb-4 animate__animated animate__fadeIn">
+          <div id="countdown" class="d-flex justify-content-center"></div>
+        </div>
+
         <div class="event-details mb-3">
-          <p><strong>Date & Time:</strong> {{ seminar.date }}</p>
+          <p><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
           <p><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
         </div>
-
-        <!-- Countdown Timer -->
-        <div class="event-countdown mb-4">
-          <h4>Starts in:</h4>
-          <div id="countdown-timer" class="h3"></div>
-          <button id="restart-countdown" class="btn btn-sm btn-outline-secondary mt-2">
-            Restart Countdown
-          </button>
-        </div>
-
         <div class="event-speakers mb-3">
           <h4>Speakers:</h4>
           {% for speaker in seminar.speakers %}
-          <div class="speaker {% if forloop.first %}mb-3{% endif %}">
-            <img src="{{ speaker.image | prepend: site.baseurl }}" alt="{{ speaker.name }}" class="speaker-photo" loading="lazy">
+          <div class="speaker d-flex mb-3">
+            <img src="{{ speaker.image | prepend: site.baseurl }}" alt="{{ speaker.name }}" class="speaker-photo rounded-circle me-3" loading="lazy" width="60" height="60">
             <div class="speaker-info">
               <strong>{{ speaker.name }}</strong><br>
               {{ speaker.role }}<br>
-              <a href="{{ speaker.link }}" target="_blank" rel="noopener">Link</a>
+              <a href="{{ speaker.link }}" target="_blank" rel="noopener">More</a>
             </div>
           </div>
           {% endfor %}
         </div>
         <div class="event-actions">
-          <a href="{{ seminar.registration_link }}" class="btn btn-primary" target="_blank" rel="noopener">
+          <a href="{{ seminar.registration_link }}" class="btn btn-primary animate__animated animate__pulse animate__infinite">
             Join the Seminar
           </a>
         </div>
@@ -80,10 +76,10 @@ bodyClass: "page-home"
         <div class="news-sidebar">
           <h3 id="latest-news-title"><strong>Latest News</strong></h3>
           <ul class="list-unstyled">
-            {% for news in site.data.news.latest_news %}
-            <li>
-              <strong>{{ news.date }}:</strong>
-              {{ news.text | truncatewords: 20 }}
+            {% for news in site.data.news.latest_news limit:6 %}
+            <li class="mb-2">
+              <small class="text-muted">{{ news.date }}:</small>
+              {{ news.text | truncatewords: 18 }}
               {% if news.read_more %}
                 <a href="{{ news.read_more }}" target="_blank" rel="noopener">Read more</a>
               {% endif %}
@@ -153,47 +149,65 @@ bodyClass: "page-home"
 </div>
 {% endif %}
 
-<!-- Countdown Script -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Parse seminar date and time (expects "YYYY-MM-DD HH:MM" format)
-  const seminarDate = new Date('{{ seminar.date | date: "%Y-%m-%d %H:%M" }}').getTime();
-  let target = seminarDate;
-
-  const timerEl   = document.getElementById('countdown-timer');
-  const restartBtn = document.getElementById('restart-countdown');
-  let intervalId;
-
-  function updateCountdown() {
-    const now  = Date.now();
-    const diff = target - now;
-
-    if (diff <= 0) {
-      timerEl.textContent = '🟢 Seminar is live!';
-      clearInterval(intervalId);
-      intervalId = null;
-      return;
-    }
-
-    const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60))      / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60))           / 1000);
-
-    timerEl.textContent = 
-      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+<!-- Countdown Styles & Script -->
+<style>
+  .event-countdown #countdown { 
+    font-family: "Segoe UI", sans-serif; 
+    font-size: 1.25rem; 
+    gap: 0.75rem; 
   }
+  .event-countdown #countdown span { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: #f0f0f0; 
+    padding: 0.5rem 0.75rem; 
+    border-radius: 0.5rem; 
+    min-width: 60px;
+  }
+  .event-countdown #countdown span small { 
+    font-size: 0.6em; 
+    color: #555; 
+  }
+  .event-countdown #countdown .sep {
+    font-size: 1.5rem; 
+    line-height: 1.5;
+    margin: 0 0.25rem;
+  }
+</style>
 
-  restartBtn.addEventListener('click', () => {
-    target = seminarDate;
-    if (!intervalId) {
-      updateCountdown();
-      intervalId = setInterval(updateCountdown, 1000);
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Make sure your data file uses an ISO‐format date, e.g. "2025-06-12 17:00:00"
+    const target = new Date("{{ seminar.date | date: "%Y-%m-%dT%H:%M:%S" }}Z");
+    const countdownEl = document.getElementById("countdown");
+
+    function update() {
+      const now = new Date();
+      let diff = target - now;
+      if (diff <= 0) {
+        countdownEl.innerHTML = "<strong>Seminar is live now!</strong>";
+        clearInterval(timer);
+        return;
+      }
+      const days = Math.floor(diff / 86400000);
+      diff %= 86400000;
+      const hours = Math.floor(diff / 3600000);
+      diff %= 3600000;
+      const mins = Math.floor(diff / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+
+      countdownEl.innerHTML = 
+        `<span>${days}<small>Days</small></span>` +
+        `<span class="sep">:</span>` +
+        `<span>${hours}<small>Hours</small></span>` +
+        `<span class="sep">:</span>` +
+        `<span>${mins}<small>Minutes</small></span>` +
+        `<span class="sep">:</span>` +
+        `<span>${secs}<small>Seconds</small></span>`;
     }
-  });
 
-  // Start ticking
-  updateCountdown();
-  intervalId = setInterval(updateCountdown, 1000);
-});
+    update();
+    const timer = setInterval(update, 1000);
+  });
 </script>
