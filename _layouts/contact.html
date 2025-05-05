@@ -3,20 +3,29 @@ title: Contact
 layout: default
 bodyClass: "page-contact"
 ---
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+
 <div class="intro animate__animated animate__slideInRight">
-    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-        <div class="row justify-content-start">
-            <div class="col-12 col-md-8">
-                <div class="service service-single">
-                    <h1 class="title">{{page.title}}</h1>
-                    {% include call.html show_button=false %}
-                    <div class="content mt-4">{{content}}</div>
-                </div>
-            </div>
+  <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-8">
+        <div class="service service-single">
+          <h1 class="title">{{ page.title }}</h1>
+
+          {% include call.html
+            show_button=true
+            contact_button_link=site.data.contact.contact_button_link
+            contact_button_text=site.data.contact.contact_button_text
+            contact_sentence=site.data.contact.contact_sentence
+          %}
+
+          <div class="content mt-4">{{ content }}</div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
