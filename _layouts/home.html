@@ -32,24 +32,24 @@ bodyClass: "page-home"
   </div>
 </div>
 
-<!-- Upcoming Seminar + News Strip (70/20 split, inline countdown) -->
+<!-- Upcoming Seminar + News Strip (70% / 20% flex layout) -->
 <div class="strip strip-grey animate__animated animate__fadeInUp">
   <div class="container py-6">
-    <div class="d-flex justify-content-between flex-wrap">
+    <div class="d-flex justify-content-between align-items-start" style="gap:10%;">
 
-      <!-- 70% Event Column -->
-      <div class="event-wrapper" style="flex:7; min-width:300px;">
+      <!-- Event Card (70%) -->
+      <section style="flex:0 0 70%;">
         <div class="event-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
           {% assign seminar = site.data.news.upcoming_seminar %}
           <h2 class="mb-1"><strong>{{ seminar.title }}</strong></h2>
           <p class="text-secondary mb-4">{{ seminar.subtitle }}</p>
 
-          <!-- Inline Countdown -->
+          <!-- Countdown -->
           <div class="event-countdown mb-4 animate__animated animate__pulse animate__infinite">
-            <div id="countdown"></div>
+            <div id="countdown" class="d-flex justify-content-center align-items-center"></div>
           </div>
 
-          <!-- Details -->
+          <!-- Date & Time -->
           <p class="mb-1"><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
           <p class="mb-4"><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
 
@@ -58,8 +58,8 @@ bodyClass: "page-home"
           <div class="row gx-3 gy-3">
             {% for speaker in seminar.speakers %}
             <div class="col-12 col-md-6 d-flex">
-              <img src="{{ speaker.image | prepend: site.baseurl }}" 
-                   alt="{{ speaker.name }}" class="rounded-circle me-3" 
+              <img src="{{ speaker.image | prepend: site.baseurl }}"
+                   alt="{{ speaker.name }}" class="rounded-circle me-3"
                    width="50" height="50" loading="lazy">
               <div>
                 <strong>{{ speaker.name }}</strong><br>
@@ -70,37 +70,36 @@ bodyClass: "page-home"
             {% endfor %}
           </div>
 
-          <!-- Action -->
+          <!-- Action Button -->
           <div class="text-end mt-4">
             <a href="{{ seminar.registration_link }}" class="btn btn-primary">
               Join the Seminar
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- 20% News Column -->
-      <div class="news-wrapper" style="flex:2; min-width:200px;">
+      <!-- News Card (20%) -->
+      <aside style="flex:0 0 20%;">
         <div class="news-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
           <h3 class="mb-3"><strong>Latest News</strong></h3>
           <ul class="list-unstyled mb-0">
             {% for news in site.data.news.latest_news limit:6 %}
             <li class="mb-2">
-              <small class="text-muted">{{ news.date }}:</small>
-              {{ news.text | truncatewords: 18 }}
+              <small class="text-muted">{{ news.date }}</small><br>
+              {{ news.text | truncatewords: 16 }}
               {% if news.read_more %}
-                <a href="{{ news.read_more }}" target="_blank" rel="noopener">Read more</a>
+                <br><a href="{{ news.read_more }}" target="_blank" rel="noopener">Read more</a>
               {% endif %}
             </li>
             {% endfor %}
           </ul>
         </div>
-      </div>
+      </aside>
 
     </div>
   </div>
 </div>
-
 
 <!-- Services Strip (unchanged) -->
 <div class="strip">
@@ -158,42 +157,63 @@ bodyClass: "page-home"
 </div>
 {% endif %}
 
+<!-- Styles -->
 <style>
-  #countdown {
-    font-size: 2rem;
+  .event-countdown #countdown {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
     color: #333;
-    text-align: center;
-    white-space: nowrap;
   }
-  #countdown span { margin: 0 0.25rem; }
+  .event-countdown .unit {
+    text-align: center;
+    margin: 0 0.25rem;
+  }
+  .event-countdown .unit small {
+    display: block;
+    font-size: 0.6rem;
+    color: #666;
+  }
+  .event-countdown .sep {
+    font-size: 3rem;
+    line-height: 1;
+    color: #333;
+    margin: 0 0.1rem;
+  }
 </style>
+
+<!-- Countdown Script with zero‑padding -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const target = new Date("{{ seminar.date | date: "%Y-%m-%dT%H:%M:%S" }}Z");
     const el = document.getElementById("countdown");
 
-    const pad = n => String(n).padStart(2, '0');
-    function update() {
+    function pad(v) { return String(v).padStart(2, "0"); }
+
+    function render() {
       const now = new Date();
       let diff = target - now;
       if (diff <= 0) {
-        el.textContent = "We're live now!";
+        el.innerHTML = "<strong>We're live now!</strong>";
         clearInterval(timer);
         return;
       }
-      const days  = Math.floor(diff / 86400000); diff %= 86400000;
-      const hours = Math.floor(diff / 3600000);   diff %= 3600000;
-      const mins  = Math.floor(diff / 60000);      diff %= 60000;
-      const secs  = Math.floor(diff / 1000);
+      const days  = pad(Math.floor(diff / 86400000)); diff %= 86400000;
+      const hours = pad(Math.floor(diff / 3600000));   diff %= 3600000;
+      const mins  = pad(Math.floor(diff / 60000));     diff %= 60000;
+      const secs  = pad(Math.floor(diff / 1000));
 
       el.innerHTML =
-        `<span>${pad(days)} day</span>, ` +
-        `<span>${pad(hours)} hours</span>, ` +
-        `<span>${pad(mins)} mint</span>, ` +
-        `<span>${pad(secs)} secs</span>`;
+        `<div class="unit">${days}<small>Days</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${hours}<small>Hrs</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${mins}<small>Min</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${secs}<small>Sec</small></div>`;
     }
 
-    update();
-    const timer = setInterval(update, 1000);
+    render();
+    const timer = setInterval(render, 1000);
   });
 </script>
