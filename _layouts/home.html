@@ -32,62 +32,56 @@ bodyClass: "page-home"
   </div>
 </div>
 
-<!-- Upcoming Seminar + Countdown -->
+<!-- Upcoming Seminar + Countdown (redesigned) -->
 <div class="strip strip-grey animate__animated animate__fadeInUp" aria-labelledby="event-section-title">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row">
+  <div class="container py-6">
+    <div class="row justify-content-center">
 
-      <!-- Main Column: "Upcoming Seminar" -->
-      <section class="col-12 col-md-8 event-section">
-        {% assign seminar = site.data.news.upcoming_seminar %}
-        <h2 id="event-section-title" class="event-title"><strong>{{ seminar.title }}</strong></h2>
-        <h3 class="event-subtitle">{{ seminar.subtitle }}</h3>
+      <!-- Card Container -->
+      <section class="col-12 col-lg-8">
+        <div class="event-card p-4 bg-white rounded shadow-sm">
 
-        <div class="event-countdown mb-4 animate__animated animate__fadeIn">
-          <div id="countdown" class="d-flex justify-content-center"></div>
-        </div>
+          <!-- Title & Subtitle -->
+          {% assign seminar = site.data.news.upcoming_seminar %}
+          <h2 id="event-section-title" class="mb-1"><strong>{{ seminar.title }}</strong></h2>
+          <p class="text-secondary mb-4">{{ seminar.subtitle }}</p>
 
-        <div class="event-details mb-3">
-          <p><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
-          <p><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
-        </div>
-        <div class="event-speakers mb-3">
-          <h4>Speakers:</h4>
-          {% for speaker in seminar.speakers %}
-          <div class="speaker d-flex mb-3">
-            <img src="{{ speaker.image | prepend: site.baseurl }}" alt="{{ speaker.name }}" class="speaker-photo rounded-circle me-3" loading="lazy" width="60" height="60">
-            <div class="speaker-info">
-              <strong>{{ speaker.name }}</strong><br>
-              {{ speaker.role }}<br>
-              <a href="{{ speaker.link }}" target="_blank" rel="noopener">More</a>
-            </div>
+          <!-- Countdown -->
+          <div class="event-countdown mb-4">
+            <div id="countdown" class="d-flex justify-content-between align-items-center"></div>
           </div>
-          {% endfor %}
-        </div>
-        <div class="event-actions">
-          <a href="{{ seminar.registration_link }}" class="btn btn-primary animate__animated animate__pulse animate__infinite">
-            Join the Seminar
-          </a>
+
+          <!-- Date & Time -->
+          <div class="mb-3">
+            <p class="mb-1"><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
+            <p class="mb-0"><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
+          </div>
+
+          <!-- Speakers Grid -->
+          <h4 class="mt-4">Speakers</h4>
+          <div class="row gx-4 gy-3">
+            {% for speaker in seminar.speakers %}
+            <div class="col-12 col-md-6 d-flex">
+              <img src="{{ speaker.image | prepend: site.baseurl }}" alt="{{ speaker.name }}" 
+                   class="rounded-circle me-3" width="50" height="50" loading="lazy">
+              <div>
+                <strong>{{ speaker.name }}</strong><br>
+                <small class="text-muted">{{ speaker.role }}</small><br>
+                <a href="{{ speaker.link }}" target="_blank" rel="noopener">More</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Action Button -->
+          <div class="text-end mt-4">
+            <a href="{{ seminar.registration_link }}" 
+               class="btn btn-primary animate__animated animate__pulse animate__infinite">
+              Join the Seminar
+            </a>
+          </div>
         </div>
       </section>
-
-      <!-- Sidebar Column: Latest News -->
-      <aside class="col-12 col-md-4 news-sidebar-wrapper" aria-labelledby="latest-news-title">
-        <div class="news-sidebar">
-          <h3 id="latest-news-title"><strong>Latest News</strong></h3>
-          <ul class="list-unstyled">
-            {% for news in site.data.news.latest_news limit:6 %}
-            <li class="mb-2">
-              <small class="text-muted">{{ news.date }}:</small>
-              {{ news.text | truncatewords: 18 }}
-              {% if news.read_more %}
-                <a href="{{ news.read_more }}" target="_blank" rel="noopener">Read more</a>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </aside>
 
     </div>
   </div>
@@ -176,9 +170,37 @@ bodyClass: "page-home"
   }
 </style>
 
+<!-- Styles for the redesigned card & countdown -->
+<style>
+  .event-card { position: relative; top: -30px; } /* lifts card into strip */
+  .event-countdown #countdown {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  .event-countdown #countdown span {
+    flex: 1;
+    text-align: center;
+  }
+  .event-countdown #countdown span small {
+    display: block;
+    font-size: 0.65rem;
+    color: #666;
+  }
+  .event-countdown #countdown .sep {
+    flex: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0 0.5rem;
+    color: #888;
+  }
+</style>
+
+<!-- Countdown script (unchanged) -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Make sure your data file uses an ISO‐format date, e.g. "2025-06-12 17:00:00"
     const target = new Date("{{ seminar.date | date: "%Y-%m-%dT%H:%M:%S" }}Z");
     const countdownEl = document.getElementById("countdown");
 
@@ -186,7 +208,7 @@ bodyClass: "page-home"
       const now = new Date();
       let diff = target - now;
       if (diff <= 0) {
-        countdownEl.innerHTML = "<strong>Seminar is live now!</strong>";
+        countdownEl.innerHTML = "<strong>We're live now!</strong>";
         clearInterval(timer);
         return;
       }
@@ -197,14 +219,14 @@ bodyClass: "page-home"
       const mins = Math.floor(diff / 60000);
       const secs = Math.floor((diff % 60000) / 1000);
 
-      countdownEl.innerHTML = 
+      countdownEl.innerHTML =
         `<span>${days}<small>Days</small></span>` +
         `<span class="sep">:</span>` +
-        `<span>${hours}<small>Hours</small></span>` +
+        `<span>${hours}<small>Hrs</small></span>` +
         `<span class="sep">:</span>` +
-        `<span>${mins}<small>Minutes</small></span>` +
+        `<span>${mins}<small>Min</small></span>` +
         `<span class="sep">:</span>` +
-        `<span>${secs}<small>Seconds</small></span>`;
+        `<span>${secs}<small>Sec</small></span>`;
     }
 
     update();

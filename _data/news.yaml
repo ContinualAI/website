@@ -20,13 +20,14 @@ upcoming_seminar:
 
 latest_news:
   - date: "May 8, 2025"
-    text: "Our fourth seminar, held on May 8, 2025, showcased cutting‑edge Unlearning methodologies in continual learning—highlighting strategies for models to safely discard obsolete knowledge and adapt dynamically to evolving data streams."
+    text: "4th seminar: Unlearning methods for dynamic continual learning."
   - date: "April 3, 2025"
-    text: "Our third seminar introduced the innovative topic of Open-Vocabulary Learning, challenging conventional boundaries and sparking new research discussions."
+    text: "3rd seminar: Open‑Vocabulary Learning insights."
   - date: "Mar 6, 2025"
-    text: "In our second ContinualAI Seminar of the year, we delved into efficient fine-tuning techniques—including adapters, LoRA, and beyond—to advance model optimization."
+    text: "2nd seminar: Efficient fine‑tuning with adapters & LoRA."
   - date: "Feb 6, 2025"
-    text: "Kicking off the year, our first ContinualAI Seminar delved into Task-Agnostic Continual Learning for the Open World."
+    text: "1st seminar: Task‑Agnostic Continual Learning overview."
   - date: "Jan 24, 2025"
-    text: "New ContinulAI website launched."
+    text: "Launch of the new ContinualAI website."
+
 
