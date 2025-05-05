@@ -32,38 +32,35 @@ bodyClass: "page-home"
   </div>
 </div>
 
-<!-- Upcoming Seminar + Countdown (redesigned) -->
-<div class="strip strip-grey animate__animated animate__fadeInUp" aria-labelledby="event-section-title">
+<!-- Upcoming Seminar + News Strip -->
+<div class="strip strip-grey animate__animated animate__fadeInUp">
   <div class="container py-6">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center gx-5">
 
-      <!-- Card Container -->
-      <section class="col-12 col-lg-8">
-        <div class="event-card p-4 bg-white rounded shadow-sm">
-
-          <!-- Title & Subtitle -->
+      <!-- Event Card -->
+      <section class="col-12 col-lg-6">
+        <div class="event-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
           {% assign seminar = site.data.news.upcoming_seminar %}
-          <h2 id="event-section-title" class="mb-1"><strong>{{ seminar.title }}</strong></h2>
+          <h2 class="mb-1"><strong>{{ seminar.title }}</strong></h2>
           <p class="text-secondary mb-4">{{ seminar.subtitle }}</p>
 
           <!-- Countdown -->
-          <div class="event-countdown mb-4">
-            <div id="countdown" class="d-flex justify-content-between align-items-center"></div>
+          <div class="event-countdown mb-4 animate__animated animate__pulse animate__infinite">
+            <div id="countdown" class="d-flex justify-content-center align-items-center"></div>
           </div>
 
-          <!-- Date & Time -->
-          <div class="mb-3">
-            <p class="mb-1"><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
-            <p class="mb-0"><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
-          </div>
+          <!-- Details -->
+          <p class="mb-1"><strong>Date &amp; Time:</strong> {{ seminar.date }}</p>
+          <p class="mb-4"><strong>Time Zones:</strong> {{ seminar.time_zones }}</p>
 
           <!-- Speakers Grid -->
-          <h4 class="mt-4">Speakers</h4>
-          <div class="row gx-4 gy-3">
+          <h4>Speakers</h4>
+          <div class="row gx-3 gy-3">
             {% for speaker in seminar.speakers %}
             <div class="col-12 col-md-6 d-flex">
-              <img src="{{ speaker.image | prepend: site.baseurl }}" alt="{{ speaker.name }}" 
-                   class="rounded-circle me-3" width="50" height="50" loading="lazy">
+              <img src="{{ speaker.image | prepend: site.baseurl }}" 
+                   alt="{{ speaker.name }}" class="rounded-circle me-3" 
+                   width="50" height="50" loading="lazy">
               <div>
                 <strong>{{ speaker.name }}</strong><br>
                 <small class="text-muted">{{ speaker.role }}</small><br>
@@ -73,19 +70,38 @@ bodyClass: "page-home"
             {% endfor %}
           </div>
 
-          <!-- Action Button -->
+          <!-- Action -->
           <div class="text-end mt-4">
             <a href="{{ seminar.registration_link }}" 
-               class="btn btn-primary animate__animated animate__pulse animate__infinite">
+               class="btn btn-primary">
               Join the Seminar
             </a>
           </div>
         </div>
       </section>
 
+      <!-- News Card -->
+      <aside class="col-12 col-md-5 col-lg-3">
+        <div class="news-card p-4 bg-white rounded shadow-sm position-relative" style="top:-30px;">
+          <h3 class="mb-3"><strong>Latest News</strong></h3>
+          <ul class="list-unstyled mb-0">
+            {% for news in site.data.news.latest_news limit:6 %}
+            <li class="mb-2">
+              <small class="text-muted">{{ news.date }}:</small>
+              {{ news.text | truncatewords: 18 }}
+              {% if news.read_more %}
+                <a href="{{ news.read_more }}" target="_blank" rel="noopener">Read more</a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+
     </div>
   </div>
 </div>
+
 
 <!-- Services Strip (unchanged) -->
 <div class="strip">
@@ -143,93 +159,58 @@ bodyClass: "page-home"
 </div>
 {% endif %}
 
-<!-- Countdown Styles & Script -->
 <style>
-  .event-countdown #countdown { 
-    font-family: "Segoe UI", sans-serif; 
-    font-size: 1.25rem; 
-    gap: 0.75rem; 
-  }
-  .event-countdown #countdown span { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    background: #f0f0f0; 
-    padding: 0.5rem 0.75rem; 
-    border-radius: 0.5rem; 
-    min-width: 60px;
-  }
-  .event-countdown #countdown span small { 
-    font-size: 0.6em; 
-    color: #555; 
-  }
-  .event-countdown #countdown .sep {
-    font-size: 1.5rem; 
-    line-height: 1.5;
-    margin: 0 0.25rem;
-  }
-</style>
-
-<!-- Styles for the redesigned card & countdown -->
-<style>
-  .event-card { position: relative; top: -30px; } /* lifts card into strip */
   .event-countdown #countdown {
     display: flex;
-    justify-content: space-between;
-    background: #f8f9fa;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
+    justify-content: center;
+    font-size: 2.5rem;
+    gap: 0.5rem;
   }
-  .event-countdown #countdown span {
-    flex: 1;
+  .event-countdown #countdown .unit {
     text-align: center;
   }
-  .event-countdown #countdown span small {
+  .event-countdown #countdown .unit small {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     color: #666;
   }
   .event-countdown #countdown .sep {
-    flex: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 1;
-    margin: 0 0.5rem;
-    color: #888;
+    color: #333;
   }
 </style>
 
-<!-- Countdown script (unchanged) -->
+<!-- Countdown Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const target = new Date("{{ seminar.date | date: "%Y-%m-%dT%H:%M:%S" }}Z");
-    const countdownEl = document.getElementById("countdown");
+    const el = document.getElementById("countdown");
 
-    function update() {
+    function render() {
       const now = new Date();
       let diff = target - now;
       if (diff <= 0) {
-        countdownEl.innerHTML = "<strong>We're live now!</strong>";
+        el.innerHTML = "<strong>We're live now!</strong>";
         clearInterval(timer);
         return;
       }
-      const days = Math.floor(diff / 86400000);
-      diff %= 86400000;
-      const hours = Math.floor(diff / 3600000);
-      diff %= 3600000;
-      const mins = Math.floor(diff / 60000);
-      const secs = Math.floor((diff % 60000) / 1000);
+      const days = Math.floor(diff / 86400000); diff %= 86400000;
+      const hours = Math.floor(diff / 3600000);   diff %= 3600000;
+      const mins = Math.floor(diff / 60000);      diff %= 60000;
+      const secs = Math.floor(diff / 1000);
 
-      countdownEl.innerHTML =
-        `<span>${days}<small>Days</small></span>` +
-        `<span class="sep">:</span>` +
-        `<span>${hours}<small>Hrs</small></span>` +
-        `<span class="sep">:</span>` +
-        `<span>${mins}<small>Min</small></span>` +
-        `<span class="sep">:</span>` +
-        `<span>${secs}<small>Sec</small></span>`;
+      el.innerHTML =
+        `<div class="unit">${days}<small>Days</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${hours}<small>Hrs</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${mins}<small>Min</small></div>` +
+        `<div class="sep">:</div>` +
+        `<div class="unit">${secs}<small>Sec</small></div>`;
     }
 
-    update();
-    const timer = setInterval(update, 1000);
+    render();
+    const timer = setInterval(render, 1000);
   });
 </script>
