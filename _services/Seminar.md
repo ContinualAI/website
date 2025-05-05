@@ -29,7 +29,7 @@ weight: 1
 > {% endfor %}
 >
 > {% if seminar.link %}
-> **Link:** [**Join / Watch Seminar**]({{ seminar.link }})
+> **Link:** [**Watch Seminar**]({{ seminar.link }})
 > {% else %}
 > **Link:** Coming soon
 > {% endif %}
